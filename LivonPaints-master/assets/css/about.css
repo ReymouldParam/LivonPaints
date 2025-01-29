@@ -1,0 +1,37 @@
+/* Container for the moving background */
+.color-slider {
+    width: 100%;
+    height:100px;
+    overflow: hidden;
+    position: relative;
+    top:70px;
+}
+
+/* The actual animated background */
+.color-slider::before {
+    content: "";
+    position: absolute;
+    width: 300%; /* Extend width for a seamless transition */
+    height: 100%;
+    background: repeating-linear-gradient(
+        to right, 
+        #428bca 0px, #428bca 250px,  /* Blue */
+        #f4c2c2 250px, #f4c2c2 500px, /* Pink */
+        #fdb833 500px, #fdb833 750px, /* Yellow */
+        #d4af37 750px, #d4af37 1000px, /* Gold */
+        #b68e6a 1000px, #b68e6a 1250px, /* Brown */
+        #d4af37 1250px, #d4af37 1500px, /* Gold */
+        #4682b4 1500px, #4682b4 1750px /* Steel Blue */
+    );
+    animation: slideColors 10s linear infinite;
+}
+
+/* Keyframes for the continuous movement */
+@keyframes slideColors {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
