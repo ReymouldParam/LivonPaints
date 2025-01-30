@@ -19,9 +19,11 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- slick -->
- <!-- Slick CSS (Use CDN to avoid file issues) -->
- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <!-- Slick CSS (Use CDN to avoid file issues) -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
 </head>
 
 <body>
@@ -195,53 +197,39 @@
 
                 </div>
             </div>
-            <div>
-                <div>
-                    <img src="" alt="Product-image" />
+            <div class="container-product">
+                <div class="left-section">
+                    <img src="assets/images/bucket2.png" alt="bucket" />
+                    <div class="available-packs">Available packs: 1, 4, 10 & 20L</div>
                 </div>
-                <div>
-                    <div>
-                        <h2>
-                            Maxis Exterior Emulsion
-                        </h2>
-                    </div>
-                    <div>
-                        <p>
-                            Designed to withstand harsh weather
-                        </p>
-                    </div>
-                    <div>
-                        <span>
-                            Features:
-                        </span>
+                <div class="right-section">
+                    <h2>Maxis Exterior Emulsion</h2>
+                    <p class="description">Designed to withstand harsh weather conditions, this high-performance paint
+                        offers long-lasting protection and vibrant color retention, ensuring your walls stay beautiful
+                        for years...</p>
+                    <p class="direction"><strong>Direction For Use:</strong><br>For freshly plastered surface, apply 1
+                        coat of Prime Exterior Primer...</p>
+                    <div class="features">
                         <div>
-                            <div>
-                                <img src="" alt="dust" />
-                                <p>
-                                    Dust Resistance
-                                </p>
-                            </div>
-                            <div>
-                                <img src="" alt="dust" />
-                                <p>
-                                    Dust Resistance
-                                </p>
-                            </div>
-                            <div>
-                                <img src="" alt="dust" />
-                                <p>
-                                    Dust Resistance
-                                </p>
-                            </div>
-                            <div>
-                                <img src="" alt="dust" />
-                                <p>
-                                    Dust Resistance
-                                </p>
-                            </div>
+                        <img src="assets/images/dust-protection.png" alt="Dust Resistance" class="feature-icon">
+                        <div class="feature-item">Dust Resistance</div>
                         </div>
+                        <div>
+                            <img src="assets/images/amiba-circular.png" alt="Anti Bacterial" class="feature-icon">
+                        <div class="feature-item">Low-Odour</div>
+                        </div>
+                        <div>
+                            <img src="assets/images/germs.png" alt="Kill Germs" class="feature-icon">
+                        <div class="feature-item">Luxury-Finish</div>
+                        </div>
+                        <div>
+                            <img src="assets/images/germs.png" alt="Kill Germs" class="feature-icon">
+                            <div class="feature-item">Kill-Germs</div>
+                        </div>
+                        
                     </div>
                 </div>
+                <div class="close">&times;</div>
             </div>
         </section>
 
@@ -355,25 +343,25 @@
         </footer>
 
     </div>
-  <!-- jQuery & Slick (Use latest versions) -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- jQuery & Slick (Use latest versions) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
-  <script>
-      $(document).ready(function () {
-          $('.fade-con').slick({
-              dots: true,
-              infinite: true,
-              speed: 500,
-              arrows:false,
-              autoplay:true,
-              fade: true,
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              cssEase: 'linear'
-          });
-      });
-  </script>
+    <script>
+        $(document).ready(function () {
+            $('.fade-con').slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                arrows: false,
+                autoplay: true,
+                fade: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                cssEase: 'linear'
+            });
+        });
+    </script>
 </body>
 
 </html>
