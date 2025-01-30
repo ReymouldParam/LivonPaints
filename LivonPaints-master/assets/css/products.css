@@ -1,7 +1,7 @@
 /* Container for the moving background */
 .color-slider {
     width: 100%;
-    height:100px;
+    height:20px;
     overflow: hidden;
     position: relative;
     top:70px;
@@ -378,9 +378,52 @@
 }
 
 /* section4*/
-.section4{
-    background-color: lightblue;
+.section4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    
+    /* Initial background */
+    background-image: url('../images/add1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    /* Apply fade animation */
+    animation: fadeBackground 6s infinite alternate;
 }
+
+@keyframes fadeBackground {
+    0% {
+        background-image: url('../images/add1.png');
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    100% {
+        background-image: url('../images/add2.png');
+        opacity: 1;
+    }
+}
+.myro-con{
+    width: 50%;
+    text-align:left;
+}
+.fade-con {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    margin: 2%;
+}
+.fade-con img {
+    width: 250px;
+    height: 200px;
+    vertical-align: middle;
+}
+
 .align-con{
     display: flex;
     align-items: center;
