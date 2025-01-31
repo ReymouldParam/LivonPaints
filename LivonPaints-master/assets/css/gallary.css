@@ -116,13 +116,13 @@
 
 .paint-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    /* box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); */
 }
 
 /* Paint Image */
 .paint-card img {
     width: 100%;
-    max-width: 3200px;
+    max-width: 300px;
     height: auto;
     border-radius: 5px;
 }
