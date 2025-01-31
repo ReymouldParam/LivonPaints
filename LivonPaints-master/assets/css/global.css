@@ -58,6 +58,11 @@
     border-radius: 10px;
     margin-right:20px;
 }
+.contact-btn-nav{
+    color: white !important;
+    text-decoration: none !important;
+
+}
 /*footer styles*/
 
 .footer-section {
