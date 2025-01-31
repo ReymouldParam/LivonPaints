@@ -41,8 +41,6 @@
     padding-top: 8%;
 }
 
-
-
 .product-card {
     background: white;
     width: 350px;
@@ -290,6 +288,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
     border-radius: 50%;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
@@ -438,24 +437,50 @@
     padding: 2%;
 }
 
+/* product details  */
+
+.product-details-appear {
+    position: fixed; /* Centers it on the screen */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000; /* Ensures it's above other elements */
+}
+
+.product-details-appear.active {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    display: block;
+}
+
 
 .container-product {
     display: flex;
     background: linear-gradient(to right, #E86C60 50%, #F4E9E5 50%);
-    padding: 20px;
+    /* padding: 20px; */
     border-radius: 10px;
-    width: 90%;
+    width: 100%;
     max-width: 1000px;
     margin: auto;
     position: relative;
+    
 }
+
 .left-section {
     width: 50%;
     display: flex;
-    align-items: flex-end;
     position: relative;
-    padding: 20px;
+    padding: 40px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: linear-gradient(to bottom, #E86C60 50%, transparent 50%), 
+                linear-gradient(to right, #1A1A3A 50%, #046C64 50%);
+    background-size: 100% 50%, 100% 50%;
+    background-position: top, bottom;
+    background-repeat: no-repeat;
 }
+
+
 .dummy-bucket {
     width: 250px;
     height: 300px;
@@ -468,24 +493,13 @@
     color: white;
     font-weight: bold;
 }
-.available-packs {
-    position: absolute;
-    /* bottom: 10px; */
-    left: 100px;
-    background: #2E2C6A;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 16px;
-    /* margin-top: 22px; */
-    bottom: -10px;
-}
 .right-section {
     width: 50%;
     padding: 20px;
 }
 .right-section h2 {
-    font-size: 26px;
+    font-size: 30px;
+    font-weight: bold;
     color: #2E2C6A;
     margin-bottom: 15px;
 }
@@ -501,10 +515,16 @@
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
-    border: 1px solid #333;
+    /* border: 1px solid #333; */
     padding: 10px;
     border-radius: 5px;
 }
+.features-outline{
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #333;
+}
+
 .feature-item {
     text-align: center;
     font-size: 14px;
@@ -512,8 +532,7 @@
 }
 .close {
     position: absolute;
-    top: 10px;
     right: 10px;
-    font-size: 20px;
+    font-size:30px;
     cursor: pointer;
 }
