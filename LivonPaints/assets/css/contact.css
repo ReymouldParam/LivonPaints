@@ -43,11 +43,12 @@
     display: flex;
     background-color: white;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    width: 100%;
+    padding: 1%;
     height: 100vh;
-    margin:20px;
+    width: 90%;
+    margin: 50px;
 }
 
 .form-section {
@@ -151,7 +152,7 @@ textarea {
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-top: 25px;
+    /* margin-top: 25px; */
 
 }
 
@@ -160,14 +161,13 @@ textarea {
 }
 
 .image-section {
-    flex: 1;
+   
     background-image: url('../images/contact-bg-2.png');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
-    height: 100vh;
+    background-size:contain;
     width: 100%;
-    padding: 5%;
+    height: 80vh;
     border-radius: 15px;
     position: relative;
     display: flex;
@@ -176,13 +176,11 @@ textarea {
 }
 
 .image-section .para {
-    margin-top:5px;
     font-size: 14px;
     color:white;
     line-height: 1.6;
-    text-align: justify;
-    width: 65%;
-    margin-left:auto;
+    text-align: center;
+    width:50%;
     padding: 15px; /* Adds subtle readability */
     border-radius: 10px;
 }

@@ -113,7 +113,7 @@
     display: flex;
     align-items: center;
     background: #f5f0ed;
-    max-width: 1000px;
+    /* max-width: 1000px; */
     margin: 20px auto;
     gap: 4%;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
