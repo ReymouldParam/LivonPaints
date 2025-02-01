@@ -58,11 +58,15 @@
         <div class="color-slider"></div>
         <!-- section2 -->
         <section class="section1">
-            <div class="category-item active" data-category="all">All Categories</div>
-            <div class="category-item" data-category="interior">Interior Paints</div>
-            <div class="category-item" data-category="exterior">Exterior Paints</div>
-            <div class="category-item" data-category="waterproofing">Water Proofing</div>
-            <div class="category-item" data-category="putties">Putties</div>
+            <!-- Categories -->
+            <ul class="categories">
+                <li class="category-item active" data-category="all">All Categories</li>
+                <li class="category-item" data-category="interior">Interior Paints</li>
+                <li class="category-item" data-category="exterior">Exterior Paints</li>
+                <!-- <div class="category-item" data-category="waterproofing">Water Proofing</div>
+                <div class="category-item" data-category="putties">Putties</div> -->
+            </ul>
+
             <div class="products-container">
                 <div class="filters-con" data-category="all">
                     <div class="product-details-appear" id="product1">
@@ -329,6 +333,7 @@
                             <div class="close">&times;</div>
                         </div>
                     </div>
+
                     <div class="paint-card-container">
                         <!-- card1 -->
                         <div class="paint-card-wrapper">
@@ -447,7 +452,7 @@
                     </div>
                 </div>
                 <div class="filters-con" data-category="interior">
-                    <div class="product-details-appear" id="product1">
+                    <div class="product-details-appear" id="product7">
                         <div class="container-product">
                             <div class="left-section">
                                 <img src="assets/images/bucket2.png" alt="bucket" />
@@ -491,7 +496,7 @@
                             <div class="close">&times;</div>
                         </div>
                     </div>
-                    <div class="product-details-appear" id="product2">
+                    <div class="product-details-appear" id="product8">
                         <div class="container-product">
                             <div class="left-section">
                                 <img src="assets/images/bucket2.png" alt="bucket" />
@@ -535,7 +540,7 @@
                             <div class="close">&times;</div>
                         </div>
                     </div>
-                    <div class="product-details-appear" id="product3">
+                    <div class="product-details-appear" id="product9">
                         <div class="container-product">
                             <div class="left-section">
                                 <img src="assets/images/bucket2.png" alt="bucket" />
@@ -579,7 +584,7 @@
                             <div class="close">&times;</div>
                         </div>
                     </div>
-                    <div class="product-details-appear" id="product4">
+                    <div class="product-details-appear" id="product10">
                         <div class="container-product">
                             <div class="left-section">
                                 <img src="assets/images/bucket2.png" alt="bucket" />
@@ -623,7 +628,7 @@
                             <div class="close">&times;</div>
                         </div>
                     </div>
-                    <div class="product-details-appear" id="product5">
+                    <div class="product-details-appear" id="product11">
                         <div class="container-product">
                             <div class="left-section">
                                 <img src="assets/images/bucket2.png" alt="bucket" />
@@ -667,7 +672,7 @@
                             <div class="close">&times;</div>
                         </div>
                     </div>
-                    <div class="product-details-appear" id="product6">
+                    <div class="product-details-appear" id="product12">
                         <div class="container-product">
                             <div class="left-section">
                                 <img src="assets/images/bucket2.png" alt="bucket" />
@@ -714,6 +719,25 @@
                     <div class="paint-card-container">
                         <!-- card1 -->
                         <div class="paint-card-wrapper">
+                            <div class="paint-card-background"></div>
+                            <div class="paint-card2">
+                                <div class="image-container">
+                                    <img src="assets/images/bucket2.png" alt="paint-image" class="paint-image" />
+                                </div>
+                                <div class="paint-details">
+                                    <div class="paint-info">
+                                        <p class="paint-title">Maxis</p>
+                                        <p class="paint-subtitle">Exterior Emulsion</p>
+                                    </div>
+                                    <div class="arrow-container">
+                                        <span class="arrow" data-target="product7">&#10132;</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- card2-->
+                        <div class="paint-card-wrapper">
                             <div class="paint-card-background"></div> <!-- White background layer -->
                             <div class="paint-card">
                                 <div class="image-container">
@@ -725,26 +749,7 @@
                                         <p class="paint-subtitle">Exterior Emulsion</p>
                                     </div>
                                     <div class="arrow-container">
-                                        <span class="arrow" data-target="product1">&#10132;</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- card2-->
-                        <div class="paint-card-wrapper">
-                            <div class="paint-card-background"></div> <!-- White background layer -->
-                            <div class="paint-card2">
-                                <div class="image-container">
-                                    <img src="assets/images/bucket2.png" alt="paint-image" class="paint-image" />
-                                </div>
-                                <div class="paint-details">
-                                    <div class="paint-info">
-                                        <p class="paint-title">Maxis</p>
-                                        <p class="paint-subtitle">Exterior Emulsion</p>
-                                    </div>
-                                    <div class="arrow-container">
-                                        <span class="arrow" data-target="product2">&#10132;</span>
+                                        <span class="arrow" data-target="product8">&#10132;</span>
                                     </div>
                                 </div>
                             </div>
@@ -763,7 +768,7 @@
                                         <p class="paint-subtitle">Exterior Emulsion</p>
                                     </div>
                                     <div class="arrow-container">
-                                        <span class="arrow" data-target="product3">&#10132;</span>
+                                        <span class="arrow" data-target="product9">&#10132;</span>
                                     </div>
                                 </div>
                             </div>
@@ -782,7 +787,7 @@
                                         <p class="paint-subtitle">Exterior Emulsion</p>
                                     </div>
                                     <div class="arrow-container">
-                                        <span class="arrow" data-target="product4">&#10132;</span>
+                                        <span class="arrow" data-target="product10">&#10132;</span>
                                     </div>
                                 </div>
                             </div>
@@ -801,7 +806,7 @@
                                         <p class="paint-subtitle">Exterior Emulsion</p>
                                     </div>
                                     <div class="arrow-container">
-                                        <span class="arrow" data-target="product5">&#10132;</span>
+                                        <span class="arrow" data-target="product11">&#10132;</span>
                                     </div>
                                 </div>
                             </div>
@@ -820,7 +825,7 @@
                                         <p class="paint-subtitle">Exterior Emulsion</p>
                                     </div>
                                     <div class="arrow-container">
-                                        <span class="arrow" data-target="product6">&#10132;</span>
+                                        <span class="arrow" data-target="product12">&#10132;</span>
                                     </div>
                                 </div>
                             </div>
@@ -829,7 +834,7 @@
                     </div>
                 </div>
                 <div class="filters-con" data-category="exterior">
-                    <div class="product-details-appear" id="product1">
+                    <div class="product-details-appear" id="product13">
                         <div class="container-product">
                             <div class="left-section">
                                 <img src="assets/images/bucket2.png" alt="bucket" />
@@ -873,7 +878,7 @@
                             <div class="close">&times;</div>
                         </div>
                     </div>
-                    <div class="product-details-appear" id="product2">
+                    <div class="product-details-appear" id="product14">
                         <div class="container-product">
                             <div class="left-section">
                                 <img src="assets/images/bucket2.png" alt="bucket" />
@@ -917,7 +922,7 @@
                             <div class="close">&times;</div>
                         </div>
                     </div>
-                    <div class="product-details-appear" id="product3">
+                    <div class="product-details-appear" id="product15">
                         <div class="container-product">
                             <div class="left-section">
                                 <img src="assets/images/bucket2.png" alt="bucket" />
@@ -961,7 +966,7 @@
                             <div class="close">&times;</div>
                         </div>
                     </div>
-                    <div class="product-details-appear" id="product4">
+                    <div class="product-details-appear" id="product16">
                         <div class="container-product">
                             <div class="left-section">
                                 <img src="assets/images/bucket2.png" alt="bucket" />
@@ -1005,7 +1010,7 @@
                             <div class="close">&times;</div>
                         </div>
                     </div>
-                    <div class="product-details-appear" id="product5">
+                    <div class="product-details-appear" id="product17">
                         <div class="container-product">
                             <div class="left-section">
                                 <img src="assets/images/bucket2.png" alt="bucket" />
@@ -1049,7 +1054,7 @@
                             <div class="close">&times;</div>
                         </div>
                     </div>
-                    <div class="product-details-appear" id="product6">
+                    <div class="product-details-appear" id="product18">
                         <div class="container-product">
                             <div class="left-section">
                                 <img src="assets/images/bucket2.png" alt="bucket" />
@@ -1097,7 +1102,7 @@
                         <!-- card1 -->
                         <div class="paint-card-wrapper">
                             <div class="paint-card-background"></div> <!-- White background layer -->
-                            <div class="paint-card">
+                            <div class="paint-card3">
                                 <div class="image-container">
                                     <img src="assets/images/bucket2.png" alt="paint-image" class="paint-image" />
                                 </div>
@@ -1107,7 +1112,7 @@
                                         <p class="paint-subtitle">Exterior Emulsion</p>
                                     </div>
                                     <div class="arrow-container">
-                                        <span class="arrow" data-target="product1">&#10132;</span>
+                                        <span class="arrow" data-target="product13">&#10132;</span>
                                     </div>
                                 </div>
                             </div>
@@ -1126,7 +1131,7 @@
                                         <p class="paint-subtitle">Exterior Emulsion</p>
                                     </div>
                                     <div class="arrow-container">
-                                        <span class="arrow" data-target="product2">&#10132;</span>
+                                        <span class="arrow" data-target="product14">&#10132;</span>
                                     </div>
                                 </div>
                             </div>
@@ -1135,7 +1140,7 @@
                         <!-- card3-->
                         <div class="paint-card-wrapper">
                             <div class="paint-card-background"></div> <!-- White background layer -->
-                            <div class="paint-card3">
+                            <div class="paint-card">
                                 <div class="image-container">
                                     <img src="assets/images/bucket2.png" alt="paint-image" class="paint-image" />
                                 </div>
@@ -1145,7 +1150,7 @@
                                         <p class="paint-subtitle">Exterior Emulsion</p>
                                     </div>
                                     <div class="arrow-container">
-                                        <span class="arrow" data-target="product3">&#10132;</span>
+                                        <span class="arrow" data-target="product15">&#10132;</span>
                                     </div>
                                 </div>
                             </div>
@@ -1164,7 +1169,7 @@
                                         <p class="paint-subtitle">Exterior Emulsion</p>
                                     </div>
                                     <div class="arrow-container">
-                                        <span class="arrow" data-target="product4">&#10132;</span>
+                                        <span class="arrow" data-target="product16">&#10132;</span>
                                     </div>
                                 </div>
                             </div>
@@ -1183,7 +1188,7 @@
                                         <p class="paint-subtitle">Exterior Emulsion</p>
                                     </div>
                                     <div class="arrow-container">
-                                        <span class="arrow" data-target="product5">&#10132;</span>
+                                        <span class="arrow" data-target="product17">&#10132;</span>
                                     </div>
                                 </div>
                             </div>
@@ -1202,7 +1207,7 @@
                                         <p class="paint-subtitle">Exterior Emulsion</p>
                                     </div>
                                     <div class="arrow-container">
-                                        <span class="arrow" data-target="product6">&#10132;</span>
+                                        <span class="arrow" data-target="product18">&#10132;</span>
                                     </div>
                                 </div>
                             </div>
@@ -1212,7 +1217,6 @@
                 </div>
             </div>
         </section>
-
         <!-- section3 -->
         <section class="features-section">
             <div class="brush-image-container">
@@ -1397,22 +1401,38 @@
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const categoryItems = document.querySelectorAll(".category-item");
-            const productSections = document.querySelectorAll(".products-container");
+            const productSections = document.querySelectorAll(".filters-con");
+
+            // Ensure "All Category" section is visible by default
+            productSections.forEach(section => {
+                if (section.getAttribute("data-category") === "all") {
+                    section.style.display = "block";
+                    section.classList.add("show"); // Make it visible with animation
+                } else {
+                    section.style.display = "none"; // Hide other sections initially
+                }
+            });
 
             categoryItems.forEach(item => {
                 item.addEventListener("click", function () {
                     const selectedCategory = item.getAttribute("data-category");
 
-                    // Hide all product sections
                     productSections.forEach(section => {
-                        if (section.getAttribute("data-category") === selectedCategory || selectedCategory === "all") {
+                        if (selectedCategory === "all") {
                             section.style.display = "block";
+                            setTimeout(() => section.classList.add("show"), 100);
                         } else {
-                            section.style.display = "none";
+                            if (section.getAttribute("data-category") === selectedCategory) {
+                                section.style.display = "block";
+                                setTimeout(() => section.classList.add("show"), 100);
+                            } else {
+                                section.classList.remove("show");
+                                setTimeout(() => (section.style.display = "none"), 500);
+                            }
                         }
                     });
 
-                    // Remove active class from all and add to selected
+                    // Update active class on category buttons
                     categoryItems.forEach(cat => cat.classList.remove("active"));
                     item.classList.add("active");
                 });
@@ -1420,6 +1440,8 @@
         });
 
     </script>
+     <!-- navbar -->
+     <script src="assets/navbar.js"></script>
 </body>
 
 </html>

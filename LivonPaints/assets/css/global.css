@@ -1,18 +1,19 @@
-
 /*font*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+
 /*navbar styles*/
 * {
     font-family: "Mona Sans", serif;
     font-style: normal;
 }
-:root{
+
+:root {
     --primary-color: #293B9D;
-    --secondary-color:white;
+    --secondary-color: white;
 }
 
 
-.header{
+.header {
     background-color: #ffffff;
     display: flex;
     align-items: center;
@@ -20,49 +21,89 @@
     padding: 1%;
     width: 100%;
     box-shadow: 0 6px 10px rgba(213, 24, 50, 0.5);
-    position:fixed;
+    position: fixed;
     z-index: 999;
 }
-.logo-container{
+
+.logo-container {
     width: 100px;
     height: auto;
     padding-left: 2%;
 }
-.logo{
-    width: 100%;
-    height: auto;
+
+.logo {
+    width: 100px;
+    height: 60px;
 }
-.nav-menu{
+
+.nav-menu {
     display: flex;
     align-items: center;
     justify-content: space-around;
     gap: 40px;
 }
-.nav-item{
-   font-weight: 400;
-   font-size: 20px;
-   list-style-type: none;
-}
-.nav-link{
-    color: black !important;
-    text-decoration: none !important;
 
+.nav-item {
+    font-weight: 400;
+    font-size: 20px;
+    list-style-type: none;
 }
-.contact-us{
+
+.nav-link {
+    color: black;
+    text-decoration: none !important;
+    position: relative;
+}
+
+/* Active nav-link with animated gradient effect */
+.nav-item.active .nav-link {
+    font-weight: bold !important;
+    font-size: 20px;
+    /* Slightly larger for emphasis */
+    background: linear-gradient(90deg,
+            #ff3d00, #ff9800, #ffeb3b,
+            #4caf50, #2196f3, #673ab7, #ff3d00);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientRainbow 20s ease-in-out infinite;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.2);
+    /* Soft glow */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Keyframes for a smooth, elegant gradient movement */
+@keyframes gradientRainbow {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.contact-us {
     width: 150px;
     height: auto;
     background-color: #293B9D;
     color: #ffffff;
-    padding:10px;
+    padding: 10px;
     border: none;
     border-radius: 10px;
-    margin-right:20px;
+    margin-right: 20px;
 }
-.contact-btn-nav{
+
+.contact-btn-nav {
     color: white !important;
     text-decoration: none !important;
 
 }
+
 /*footer styles*/
 
 .footer-section {
@@ -70,49 +111,55 @@
     box-shadow: 0 2px 8px #293B9D;
     border-radius: 15px;
 }
-.footer{
+
+.footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    margin-bottom:20px;
+    margin-bottom: 20px;
 }
-.connect{
+
+.connect {
     display: flex;
     flex-wrap: wrap;
-    gap:50px; 
+    gap: 50px;
     justify-content: center;
     align-items: flex-start;
 }
-.under{
+
+.under {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 10px;
 
 }
-.horizontal-line{
+
+.horizontal-line {
     text-align: center;
     width: 90%;
     margin: auto;
-    box-shadow:0 2px 8px grey;
+    box-shadow: 0 2px 8px grey;
 }
+
 .input-group input {
     border: 1px solid #ccc;
     border-radius: 15px 0 0 15px;
-    box-shadow:0 2px 8px grey;
+    box-shadow: 0 2px 8px grey;
     padding: 10px;
 }
 
 .input-group .btn {
     border-radius: 0 15px 15px 0;
     background-color: #293B9D;
-    box-shadow:0 2px 8px grey;
+    box-shadow: 0 2px 8px grey;
 }
+
 .input-group .btn:hover {
     border-radius: 0 15px 15px 0;
     background-color: #293B9D;
-    box-shadow:0 2px 8px grey;
+    box-shadow: 0 2px 8px grey;
 }
 
 .social-icons a {
