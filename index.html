@@ -33,30 +33,44 @@
     <div>
         <nav class="header">
             <div class="logo-container">
-               <a href="./index.html"> <img src="assets/images/logo.png" alt="logo" class="logo" /> </a>
+                <a href="./index.html"> <img src="assets/images/logo.png" alt="logo" class="logo" /> </a>
             </div>
-            <div>
+
+            <!-- Mobile Menu Toggle Button -->
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="nav-container">
                 <ul class="nav-menu">
                     <li class="nav-item">
-                        <a href="./index.html" class="nav-link"> Home </a>
+                        <a href="./index.html" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="./products.html" class="nav-link"> Products </a>
+                        <a href="./products.html" class="nav-link">Products</a>
                     </li>
-                    <li class="nav-item" class="nav-item">
+                    <li class="nav-item">
                         <a href="./about.html" class="nav-link">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a href="./gallary.html" class="nav-link">Gallary</a>
+                        <a href="./gallary.html" class="nav-link">Gallery</a>
+                    </li>
+                    <li class="nav-item mobile-contact">
+                        <a href="./contact.html" class="nav-link">Contact</a>
                     </li>
                 </ul>
             </div>
-            <div>
+
+            <!-- Desktop Contact Button -->
+            <div class="desktop-contact">
                 <button class="contact-us">
-                    <a href="./contact.html"  class="contact-btn-nav">Contact Us</a>
+                    <a href="./contact.html" class="contact-btn-nav">Contact Us</a>
                 </button>
             </div>
         </nav>
+
         <!--background carousel --->
         <div class=" container-fluid hero-section bg-center-cover">
 
@@ -90,7 +104,7 @@
                         <a href="#" class="primary">Find your Perfect Shade</a>
                         <a href="#" class="secondary">Explore More</a>
                     </div>
-                    <p class="text-btn-down py-3">Experience the perfect blend of <br>beauty and durability with Livon
+                    <p class="">Experience the perfect blend of <br>beauty and durability with Livon
                         Paints,<br> created to reflect your unique style</p>
                     <p class="side-text">Trusted To Transform Every Wall</p>
                 </div>
@@ -437,76 +451,81 @@
         <div class="text-center py-5">
             <h4 class="text fw-bold">Explore Our Professional Projects</h4>
         </div>
-    <div class="container">
-        <div id="multiCarousel" class="carousel slide h-100" data-bs-ride="carousel">
-            <div class="carousel-inner h-80">
-                <div class="multi-slick-carousel">
-                    <!-- Slide 1 -->
-                    <div class="imag-container bg-slide1"></div>
+        <div class="container">
+            <div id="multiCarousel" class="carousel slide h-100" data-bs-ride="carousel">
+                <div class="carousel-inner h-80">
+                    <div class="multi-slick-carousel">
+                        <!-- Slide 1 -->
+                        <div class="imag-container bg-slide1"></div>
 
-                    <!-- Slide 2 -->
-                    <div class="imag-container bg-slide2"></div>
+                        <!-- Slide 2 -->
+                        <div class="imag-container bg-slide2"></div>
 
-                    <!-- Slide 3 -->
-                    <div class="imag-container bg-slide3"></div>
-                    <!-- Slide 4 -->
-                    <div class="imag-container bg-slide4"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--end of Explore of Our Professional Projects -->
-
-    <!---start of footer section-->
-    <footer>
-        <div class="container text-center">
-            <h1 class="fw-bold">Book Your Color Consultation To Refresh Your Space!</h1>
-            <p class="text-muted fs-5">Click Here for Exclusive Offers & Discounts</p>
-            <button class="btn text-white fw-bold" style="background-color: #293B9D;">Get In Touch Now!</button>
-        </div>
-
-        <div class="footer-section container">
-            <div class="footer">
-                <!-- Subscription -->
-                <div class="decription">
-                    <h5>Livon – Your Trusted Color Choice, Making Walls Rejoice!</h5>
-                    <p class="text-muted small">Receive exclusive Updates, Industry News & Expert tips</p>
-                    <div class="input-group">
-                        <input type="email" class="form-control" placeholder="Enter Your Email">
-                        <button class="btn text-white fw-bold "> Subscribe Now!</button>
-                    </div>
-                </div>
-                <!-- Office -->
-                <div class="connect">
-                    <div class="location">
-                        <h5><i class="fa-regular fa-building"></i> Office</h5>
-                        <p class="text-muted small">3035 N Hyderabad<br>Telangana, India</p>
-                    </div>
-                    <!-- Contact -->
-                    <div class="contact">
-                        <h5><i class="fa-regular fa-envelope"></i> Contact</h5>
-                        <p class="text-muted small">hello@livonpaints.com<br>9876543210</p>
+                        <!-- Slide 3 -->
+                        <div class="imag-container bg-slide3"></div>
+                        <!-- Slide 4 -->
+                        <div class="imag-container bg-slide4"></div>
                     </div>
                 </div>
             </div>
-            <hr class="horizontal-line">
-            <div class="under">
-                <div class="copy">
-                    <p class="small text-black">Copyright © 2024. All rights reserved.</p>
+        </div>
+        <!--end of Explore of Our Professional Projects -->
+
+        <!---start of footer section-->
+        <footer>
+            <div class="container text-center">
+                <h1 class="fw-bold">Book Your Color Consultation To Refresh Your Space!</h1>
+                <p class="text-muted fs-5">Click Here for Exclusive Offers & Discounts</p>
+                <button class="btn text-white fw-bold" style="background-color: #293B9D;">Get In Touch Now!</button>
+            </div>
+
+            <div class="footer-section container">
+                <div class="footer">
+                    <!-- Subscription -->
+                    <div class="decription">
+                        <h5>Livon – Your Trusted Color Choice, Making Walls Rejoice!</h5>
+                        <p class="text-muted small">Receive exclusive Updates, Industry News & Expert tips</p>
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Enter Your Email">
+                            <button class="btn text-white fw-bold "> Subscribe Now!</button>
+                        </div>
+                    </div>
+                    <!-- Office -->
+                    <div class="connect">
+                        <div class="location">
+                            <h5><i class="fa-regular fa-building"></i> Office</h5>
+                            <p class="text-muted small">3035 N Hyderabad<br>Telangana, India</p>
+                        </div>
+                        <!-- Contact -->
+                        <div class="contact">
+                            <h5><i class="fa-regular fa-envelope"></i> Contact</h5>
+                            <p class="text-muted small">hello@livonpaints.com<br>9876543210</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="social-icons">
-                    <a href="https://livonpaints.com/" class="me-2"><i class="fa-brands fa-google fa-xl"></i></a>
-                    <a href="https://www.facebook.com/p/Livon-Paints-100085907498728/" class="me-2"><i
-                            class="fa-brands fa-facebook fa-xl"></i></a>
-                    <a href="https://www.instagram.com/livonpaints/" class="me-2"><i
-                            class="fa-brands fa-instagram fa-xl"></i></a>
-                    <a href="#"><i class="fa-brands fa-youtube fa-xl"></i></a>
+                <hr class="horizontal-line">
+                <div class="under">
+                    <div class="copy">
+                        <p class="small text-black">Copyright © 2024. All rights reserved.</p>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://livonpaints.com/" class="me-2"><i class="fa-brands fa-google fa-xl"></i></a>
+                        <a href="https://www.facebook.com/p/Livon-Paints-100085907498728/" class="me-2"><i
+                                class="fa-brands fa-facebook fa-xl"></i></a>
+                        <a href="https://www.instagram.com/livonpaints/" class="me-2"><i
+                                class="fa-brands fa-instagram fa-xl"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube fa-xl"></i></a>
+                    </div>
                 </div>
             </div>
+            <br><br>
+        </footer>
+        <!--end of footer section-->
+        <div id="popup-message" class="popup">
+            <h2 id="popup-heading" class="pop-up-heading"></h2>
+            <p id="popup-para" class="pop-up-para"></p>
+            <button id="close-popup" class="close-btn">Close</button>
         </div>
-        <br><br>
-    </footer>
-    <!--end of footer section-->
     </div>
     <!-- Scripts -->
 
@@ -644,7 +663,7 @@
         });
     </script>
     <!-- navbar -->
-     <script src="assets/navbar.js"></script>
+    <script src="assets/navbar.js"></script>
 </body>
 
 </html>

@@ -104,6 +104,117 @@
 
 }
 
+/* mobile navbar */
+/* Mobile Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    padding: 10px;
+}
+
+.hamburger span {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+
+    /* Initially hidden with opacity & transform */
+    .logo {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .header {
+        padding: 0;
+    }
+
+    .nav-container {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: white;
+        width: 100%;
+        max-width: 250px;
+        /* Adjust width */
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        transform: translateY(-20px);
+        /* Start above */
+        transition: opacity 0.4s ease, transform 0.4s ease;
+        visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        /* Prevent sudden jumps */
+    }
+
+    /* Show menu with smooth animation */
+    .nav-container.active {
+        opacity: 1;
+        transform: translateY(0);
+        visibility: visible;
+        width: 38%;
+        margin-right: 20px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+        gap: 20px;
+    }
+
+    .hamburger {
+        display: flex;
+        cursor: pointer;
+    }
+
+    /* When active, transform into "X" */
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    /* Hide desktop contact button on mobile */
+    .desktop-contact {
+        display: none;
+    }
+
+    /* Style contact as nav-item in mobile menu */
+    .mobile-contact {
+        font-weight: 400;
+        font-size: 20px;
+        list-style-type: none;
+    }
+
+    .mobile-contact .nav-link {
+        color: black;
+        text-decoration: none !important;
+    }
+}
+
+
+/* Show desktop contact button normally */
+@media (min-width: 769px) {
+    .mobile-contact {
+        display: none;
+    }
+}
+
+
+
 /*footer styles*/
 
 .footer-section {
@@ -184,5 +295,308 @@
 
     .footer-section .col-md-4 {
         margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .footer-section {
+        width: 80%;
+        margin: auto;
+    }
+
+    .container {
+        width: 90% !important;
+        /* margin-left: 1% !important; */
+        padding: 5%;
+        margin-top: 12px;
+    }
+
+    /* Subscription Section */
+    .decription {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .decription h5 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .decription p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    /* Office & Contact Section */
+    .connect {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        gap: 15px;
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    .connect h5 {
+        font-size: 16px;
+    }
+
+    .connect p {
+        font-size: 14px;
+    }
+
+    /* Copyright & Social Icons */
+    .under {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin-top: 15px;
+        gap: 10px;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .social-icons a {
+        font-size: 20px;
+    }
+
+    .horizontal-line {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+
+/* pop-up */
+.popup {
+    display: none;
+    /* Initially hidden */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: auto;
+    /* Adjust height to fit content */
+    background-color: #D51832;
+    /* Background color */
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    z-index: 1000;
+    text-align: center;
+}
+
+.pop-up-heading {
+    font-size: 30px;
+    /* Adjust font size for better fit */
+    font-family: "Raleway Bold";
+    font-weight: 400;
+    color: #ffffff;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    /* Margin for spacing */
+}
+
+.pop-up-para {
+    color: #FFFFFF;
+    font-size: 16px;
+    /* Adjust font size for better fit */
+    font-family: "Raleway";
+    font-weight: normal;
+    margin-bottom: 20px;
+    /* Margin for spacing */
+}
+
+.close-btn {
+    margin-top: 10px;
+    width: auto;
+    /* Adjust width for better fit */
+    height: auto;
+    font-family: "Raleway Bold";
+    font-size: 10px;
+    /* Adjust font size for better fit */
+    background-color: #1E1B25;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    /* Transition for hover effect */
+}
+
+.close-btn:hover {
+    background-color: #FFFFFF;
+    color: #1e1b25;
+    font-family: "Raleway Bold";
+}
+
+
+
+/* pop-up */
+.popup {
+    display: none;
+    /* Initially hidden */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: auto;
+    /* Adjust height to fit content */
+    background-color: white;
+    /* Background color */
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    z-index: 1000;
+    text-align: center;
+}
+
+.pop-up-heading {
+    font-size: 30px;
+    /* Adjust font size for better fit */
+    font-family: "Raleway Bold";
+    font-weight: 400;
+    color: black;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    /* Margin for spacing */
+}
+
+.pop-up-para {
+    color: black;
+    font-size: 16px;
+    /* Adjust font size for better fit */
+    font-family: "Raleway";
+    font-weight: normal;
+    margin-bottom: 20px;
+    /* Margin for spacing */
+}
+
+.close-btn {
+    margin-top: 10px;
+    width: auto;
+    /* Adjust width for better fit */
+    height: auto;
+    font-family: "Raleway Bold";
+    font-size: 10px;
+    /* Adjust font size for better fit */
+    background-color: #293B9D;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    /* Transition for hover effect */
+}
+
+.close-btn:hover {
+    background-color: red;
+    color: #FFFFFF;
+    font-family: "Raleway Bold";
+}
+
+/* smaller laptops */
+@media only screen and (min-width:1120px) and (max-width: 1280px) {
+    .popup {
+        width: 70%;
+        /* Adjust width for smaller screens */
+        padding: 15px;
+        /* Adjust padding for better fit */
+    }
+
+    .pop-up-heading {
+        font-size: 24px;
+        /* Adjust font size */
+    }
+
+    .pop-up-para {
+        font-size: 14px;
+        /* Adjust font size */
+    }
+
+    .close-btn {
+        font-size: 14px;
+        /* Adjust font size */
+        padding: 8px 16px;
+        /* Adjust padding */
+    }
+
+    .input-btn-align {
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+/* tablet */
+@media screen and (min-width:720px) and (max-width:1024px) {
+    .popup {
+        width: 92%;
+        /* Adjust width for mobile screens */
+        padding: 10px;
+        /* Adjust padding for better fit */
+    }
+
+    .pop-up-heading {
+        font-size: 20px;
+        /* Adjust font size */
+    }
+
+    .pop-up-para {
+        font-size: 10px;
+        /* Adjust font size */
+        font-weight: 100;
+        letter-spacing: 2px;
+    }
+
+    .close-btn {
+        font-size: 12px;
+        /* Adjust font size */
+        padding: 6px 12px;
+        /* Adjust padding */
+    }
+}
+
+/* Mobile View Footer Adjustments */
+@media (max-width: 550px) {
+    .popup {
+        width: 92%;
+        /* Adjust width for mobile screens */
+        padding: 10px;
+        /* Adjust padding for better fit */
+    }
+
+    .pop-up-heading {
+        font-size: 20px;
+        /* Adjust font size */
+    }
+
+    .pop-up-para {
+        font-size: 10px;
+        /* Adjust font size */
+        font-weight: 100;
+        letter-spacing: 2px;
+    }
+
+    .close-btn {
+        font-size: 12px;
+        /* Adjust font size */
+        padding: 6px 12px;
+        /* Adjust padding */
     }
 }

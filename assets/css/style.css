@@ -1,5 +1,7 @@
 body {
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 /*styling for background carousel*/
@@ -16,10 +18,10 @@ body {
 
 .carousel-wrapper {
     position: absolute;
-    top: 0;
+    background-position-y: 20px;
     left: 0;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
 }
 
 .bg-1 {
@@ -72,7 +74,8 @@ body {
 
 .side-text {
     position: absolute;
-    top: 85%;
+    /* top: 85%; */
+    margin-top: -90px;
     right: 0px;
     transform: rotate(-90deg) translate(50%, -50%);
     font-size: 0.75rem;
@@ -118,26 +121,14 @@ body {
 }
 
 .images {
-    position: relative;
-    left: 220px;
     display: flex;
-    justify-content: center;
-    align-items: flex-end !important;
-    /* margin-top:0; */
-}
-
-.images .chairs,
-.images .buckets {
-    max-width: 30%;
-    height: auto;
-}
-
-.images .chairs img,
-.images .buckets img {
+    align-items: center;
+    justify-content: space-evenly;
     width: 100%;
-    max-height: 100%;
-    display: block;
+    margin-top: -80px;
+    margin-left: 10%;
 }
+
 
 @media screen and (max-width: 1600px) {
     .content {
@@ -211,6 +202,7 @@ body {
     }
 }
 
+
 @media screen and (max-width: 768px) {
     .content {
         top: 0%;
@@ -224,13 +216,6 @@ body {
 
     .content p {
         font-size: 0.75rem;
-    }
-
-    .images .chairs,
-    .images .buckets {
-        left: 0px;
-        max-width: 20%;
-        margin-top: 350px;
     }
 
     .side-text {
@@ -303,6 +288,7 @@ body {
         max-width: calc(100% - 30px);
         text-align: center;
     }
+  
 
     .content h1 {
         font-size: 1.6rem;
@@ -313,14 +299,10 @@ body {
     }
 
     .images {
-        flex-direction: row;
+        display: none;
+        flex-direction: column;
         align-items: center;
-    }
-
-    .images .chairs,
-    .images .buckets {
-        max-width: 50%;
-        margin-top: 450px;
+        margin: 0;
     }
 
     .text-container {
@@ -800,6 +782,13 @@ body {
     background-color: transparent;
     padding: 20px;
 }
+
+/* @media screen and (max-width:768px) {
+    .container {
+        width: 100% !important;
+        margin-left: 5% !important;
+    }
+} */
 
 .icon-circles {
     flex-shrink: 0;
