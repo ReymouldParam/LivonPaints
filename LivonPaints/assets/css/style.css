@@ -1,13 +1,13 @@
-
-body{
+body {
     overflow-x: hidden;
 }
+
 /*styling for background carousel*/
 .hero-section {
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
-    padding: 0; 
+    padding: 0;
     position: relative;
     z-index: 4;
     width: 100vw;
@@ -19,63 +19,72 @@ body{
     top: 0;
     left: 0;
     height: 100%;
-    width: 100%; 
+    width: 100%;
 }
-.bg-1{
+
+.bg-1 {
     background-image: url('../images/home-background-1.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
-.bg-2{
+
+.bg-2 {
     background-image: url('../images/home-background-2.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
-.bg-3{
+
+.bg-3 {
     background-image: url('../images/home-background-3.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .carousel-text-overlay {
     position: absolute;
-    top:20%;
+    top: 20%;
     color: white;
     z-index: 1;
-    width: 100%; 
-    margin:auto;
+    width: 100%;
+    margin: auto;
 }
-.text-container{
+
+.text-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.text-container .property1{
+
+.text-container .property1 {
     white-space: nowrap;
 }
+
 .content {
     position: absolute;
     top: 10%;
     left: 60px;
     text-align: left;
     color: white;
-    max-width: calc(100% - 100px); 
-    word-wrap: break-word; 
-    padding-right: 20px; 
+    max-width: calc(100% - 100px);
+    word-wrap: break-word;
+    padding-right: 20px;
 }
+
 .side-text {
     position: absolute;
-    top:85%;
-    right:0px;
+    top: 85%;
+    right: 0px;
     transform: rotate(-90deg) translate(50%, -50%);
     font-size: 0.75rem;
     color: white;
     text-align: center;
 }
+
 /*side text animations*/
 .content h1 {
     font-size: 2.5rem;
     font-weight: bold;
-    line-height: 1.2; 
+    line-height: 1.2;
 }
 
 .content h1 span {
@@ -85,8 +94,8 @@ body{
 .content .text-btn-down {
     margin: 10px 0;
     font-size: 0.75rem;
-    line-height: 1.5; 
-    margin-top:30px;
+    line-height: 1.5;
+    margin-top: 30px;
 }
 
 .content .buttons {
@@ -97,24 +106,26 @@ body{
     display: inline-block;
     padding: 10px 10px;
     color: white;
-    background-color:var(--primary-color);
+    background-color: var(--primary-color);
     border-radius: 5px;
     text-decoration: none;
 }
 
 .content .buttons a.secondary {
     background-color: transparent;
-    border:1px solid white;
-    border-radius:5px;
+    border: 1px solid white;
+    border-radius: 5px;
 }
 
 .images {
     position: relative;
-    bottom:30px;
+    left: 220px;
     display: flex;
-    justify-content:center !important;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: flex-end !important;
+    /* margin-top:0; */
 }
+
 .images .chairs,
 .images .buckets {
     max-width: 30%;
@@ -124,9 +135,10 @@ body{
 .images .chairs img,
 .images .buckets img {
     width: 100%;
-    max-height:100%;
+    max-height: 100%;
     display: block;
 }
+
 @media screen and (max-width: 1600px) {
     .content {
         top: 0%;
@@ -141,6 +153,7 @@ body{
     .content p {
         font-size: 0.75rem;
     }
+
     .images .chairs,
     .images .buckets {
         max-width: 30%;
@@ -163,6 +176,7 @@ body{
     .content p {
         font-size: 0.75rem;
     }
+
     .images .chairs,
     .images .buckets {
         max-width: 30%;
@@ -189,6 +203,7 @@ body{
     .images {
         justify-content: space-around;
     }
+
     .images .chairs,
     .images .buckets {
         max-width: 30%;
@@ -213,24 +228,27 @@ body{
 
     .images .chairs,
     .images .buckets {
-        left:0px;
+        left: 0px;
         max-width: 20%;
-        margin-top:350px;
+        margin-top: 350px;
     }
+
     .side-text {
         font-size: 0.75rem;
-        display:flex; 
+        display: flex;
         align-items: center;
-        justify-content: center; 
+        justify-content: center;
         transform: none;
-        position: relative; 
-        left:0px;
+        position: relative;
+        left: 0px;
     }
-    .content .buttons{
-        padding:0px;
+
+    .content .buttons {
+        padding: 0px;
     }
-    .content .text-btn-down{
-        padding:0px;
+
+    .content .text-btn-down {
+        padding: 0px;
     }
 }
 
@@ -262,15 +280,18 @@ body{
         max-width: 50%;
         margin-top: 350px;
     }
+
     .text-container {
         display: block;
-        text-align: center; 
+        text-align: center;
     }
-    .content .buttons{
-        padding:0px;
+
+    .content .buttons {
+        padding: 0px;
     }
-    .content .text-btn-down{
-        padding:0px;
+
+    .content .text-btn-down {
+        padding: 0px;
     }
 }
 
@@ -301,15 +322,18 @@ body{
         max-width: 50%;
         margin-top: 450px;
     }
+
     .text-container {
         display: block;
-        text-align: center; 
+        text-align: center;
     }
-    .content .buttons{
-        padding:0px;
+
+    .content .buttons {
+        padding: 0px;
     }
-    .content .text-btn-down{
-        padding:0px;
+
+    .content .text-btn-down {
+        padding: 0px;
     }
 }
 
@@ -340,15 +364,18 @@ body{
         max-width: 50%;
         margin-top: 400px;
     }
+
     .text-container {
-        display: block; 
-        text-align: center; 
+        display: block;
+        text-align: center;
     }
-    .content .buttons{
-        padding:0px;
+
+    .content .buttons {
+        padding: 0px;
     }
-    .content .text-btn-down{
-        padding:0px;
+
+    .content .text-btn-down {
+        padding: 0px;
     }
 }
 
@@ -374,21 +401,25 @@ body{
         max-width: 95%;
         margin-top: 350px;
     }
+
     .text-container {
         display: block;
-        text-align: center; 
+        text-align: center;
     }
-    .content .buttons{
-        padding:0px;
+
+    .content .buttons {
+        padding: 0px;
     }
-    .content .text-btn-down{
-        padding:0px;
+
+    .content .text-btn-down {
+        padding: 0px;
     }
 }
+
 /*end of background carousel*/
 /*styling for you looking for*/
 .paint-options {
-    background-color: #ffff; 
+    background-color: #ffff;
     width: 100%;
     margin: auto;
 }
@@ -398,19 +429,21 @@ body{
 }
 
 .btn-card {
-    background-color: #2d4aa0; 
+    background-color: #2d4aa0;
     color: white;
     padding: 15px;
     border-radius: 5px;
     display: flex;
     justify-content: space-between;
-    align-items: center; 
-    width: 100%; 
-    text-align: center; 
+    align-items: center;
+    width: 100%;
+    text-align: center;
     box-sizing: border-box;
     white-space: nowrap;
-    overflow: hidden; /* Ensures no elements overflow */
-    position: relative; /* For better control of child elements */
+    overflow: hidden;
+    /* Ensures no elements overflow */
+    position: relative;
+    /* For better control of child elements */
 }
 
 .btn-card span {
@@ -419,11 +452,13 @@ body{
     flex: 1;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow:ellipsis; /* Prevent text from overflowing */
+    text-overflow: ellipsis;
+    /* Prevent text from overflowing */
 }
 
 .icon-circle {
-    flex-shrink: 0; /* Prevent shrinking */
+    flex-shrink: 0;
+    /* Prevent shrinking */
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -436,54 +471,65 @@ body{
 .icon-circle i {
     font-size: 1rem;
     color: #000;
-    transform: rotate(-30deg); 
+    transform: rotate(-30deg);
     transition: transform 0.5s ease;
 }
 
 .icon-circle:hover i {
-    transform: rotate(0deg); /* Reset rotation on hover */
+    transform: rotate(0deg);
+    /* Reset rotation on hover */
 }
 
 @media (max-width: 1200px) {
     .btn-card {
-        padding: 12px; /* Reduce padding */
+        padding: 12px;
+        /* Reduce padding */
     }
 
     .btn-card span {
-        font-size: 14px; /* Adjust text size */
+        font-size: 14px;
+        /* Adjust text size */
     }
 
     .icon-circle {
-        width: 25px; /* Adjust icon size */
+        width: 25px;
+        /* Adjust icon size */
         height: 25px;
     }
 
     .icon-circle i {
-        font-size: 0.9rem; /* Adjust icon font size */
+        font-size: 0.9rem;
+        /* Adjust icon font size */
     }
 }
 
 @media (max-width: 768px) {
     .btn-card {
-        padding: 10px; 
-        justify-content: space-between; /* Maintain proper spacing */
-        overflow: hidden; /* Ensures content remains inside */
+        padding: 10px;
+        justify-content: space-between;
+        /* Maintain proper spacing */
+        overflow: hidden;
+        /* Ensures content remains inside */
     }
 
     .btn-card span {
-        font-size: 13px; /* Adjust text size */
+        font-size: 13px;
+        /* Adjust text size */
     }
 
     .icon-circle {
-        width: 20px; /* Reduce icon size */
+        width: 20px;
+        /* Reduce icon size */
         height: 20px;
     }
 
     .icon-circle i {
-        font-size: 0.8rem; /* Adjust icon font size */
+        font-size: 0.8rem;
+        /* Adjust icon font size */
     }
-} 
-/*end of you looking for*/ 
+}
+
+/*end of you looking for*/
 /*styling for about us*/
 .image-container {
     position: relative;
@@ -492,7 +538,7 @@ body{
 
 .ladder-image {
     width: 100%;
-    max-width:900px; 
+    max-width: 900px;
     position: relative;
     z-index: 2;
 }
@@ -500,7 +546,7 @@ body{
 .paint-image {
     position: absolute;
     top: 25%;
-    left: 65%; 
+    left: 65%;
     transform: translate(-50%, -50%);
     width: 100%;
     z-index: 1;
@@ -508,27 +554,32 @@ body{
 
 .cards-image {
     width: 60%;
-    margin-top:50px;
+    margin-top: 50px;
 }
-.text-card p{
+
+.text-card p {
     font-size: 0.9rem;
 }
-    .text-card .btn{
-        margin-bottom:60px;
-    }
+
+.text-card .btn {
+    margin-bottom: 60px;
+}
+
 .info-card {
     background: #fff;
     border: 1px solid #ddd;
     border-radius: 5px;
     text-align: center;
     transition: transform 0.3s ease;
-    box-shadow:0 2px 2px #293B9D;
+    box-shadow: 0 2px 2px #293B9D;
 }
+
 .info-card:hover {
-    transform: scale(1.05); 
-    box-shadow: 0 4px 8px #293B9D; 
-    border-color: #293B9D; 
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px #293B9D;
+    border-color: #293B9D;
 }
+
 .info-card img {
     margin-bottom: 1rem;
 }
@@ -546,28 +597,29 @@ body{
 @media (max-width: 768px) {
     .ladder-image {
         width: 100%;
-        max-width: 300px; 
+        max-width: 300px;
     }
 
     .paint-image {
-        width: 45%; 
-        left: 80%; 
+        width: 45%;
+        left: 80%;
     }
 }
+
 /*end of about us*/
 /*styling for livon ultra primer carousel */
 #carousel-section {
-    position: relative; 
-    padding-top: 20px; 
+    position: relative;
+    padding-top: 20px;
     padding-bottom: 20px;
-    background-color:white;
+    background-color: white;
 }
 
 /* Slick Carousel */
 .slicks-carousel {
     position: relative;
     height: 70vh;
-    min-height: 400px; 
+    min-height: 400px;
     overflow: hidden;
 }
 
@@ -575,10 +627,12 @@ body{
 .slick-list {
     overflow: hidden;
 }
+
 .slick-track {
     display: flex;
     align-items: center;
 }
+
 .carousel-item {
     display: flex;
     align-items: center;
@@ -589,31 +643,36 @@ body{
     background-blend-mode: multiply;
     background-position: center;
 }
+
 .slick-slide img.bucket-img {
-    display: inline-block; 
+    display: inline-block;
     max-width: 100%;
-    height: auto; 
+    height: auto;
 }
+
 .slick-slide img.man-img {
-    display: inline-block; 
+    display: inline-block;
     max-width: 100%;
-    height: auto; 
+    height: auto;
 }
 
 /* Background Colors */
-.slicks-carousel .slides-1{
+.slicks-carousel .slides-1 {
     background-color: #c4e1a7;
 }
-.slicks-carousel .slides-2{
+
+.slicks-carousel .slides-2 {
     background-color: #a7d0e171;
 }
-.slicks-carousel .slides-3{
+
+.slicks-carousel .slides-3 {
     background-color: #e1a7dd;
 }
 
 .man-img {
     max-height: 70%;
 }
+
 .bucket-img {
     max-width: 100%;
     height: auto;
@@ -623,14 +682,18 @@ body{
 @media (max-width: 992px) {
     .slicks-carousel {
         height: 60vh;
-        min-height: 300px; /* Reduced minimum height */
+        min-height: 300px;
+        /* Reduced minimum height */
     }
+
     .carousel-item h1 {
         font-size: 1.5rem;
     }
+
     .man-img {
         max-height: 60%;
     }
+
     .bucket-img {
         max-height: 200px;
     }
@@ -641,22 +704,26 @@ body{
         height: auto;
         padding: 20px;
     }
+
     .carousel-item {
         flex-direction: column;
         justify-content: center;
     }
+
     .carousel-item h1 {
         font-size: 1.5rem;
         margin-bottom: 10px;
     }
+
     .man-img {
         max-height: 30vh;
         margin-bottom: 10px;
     }
+
     .bucket-img {
         max-height: 20vh;
         margin-top: 10px;
-        margin-left:0px;
+        margin-left: 0px;
     }
 }
 
@@ -664,18 +731,21 @@ body{
     .slicks-carousel {
         padding: 10px;
     }
+
     .carousel-item h1 {
         font-size: 1.2rem;
         margin-bottom: 8px;
     }
+
     .man-img {
         max-height: 25vh;
         margin-bottom: 8px;
     }
+
     .bucket-img {
         max-height: 15vh;
         margin-top: 8px;
-        margin-left:0px;
+        margin-left: 0px;
     }
 }
 
@@ -683,18 +753,21 @@ body{
     .slicks-carousel {
         padding: 5px;
     }
+
     .carousel-item h1 {
         font-size: 1rem;
         margin-bottom: 5px;
     }
+
     .man-img {
         max-height: 20vh;
         margin-bottom: 5px;
     }
+
     .bucket-img {
         max-height: 15vh;
         margin-top: 5px;
-        margin-left:0px;
+        margin-left: 0px;
     }
 }
 
@@ -702,16 +775,19 @@ body{
     .slicks-carousel {
         height: 70vh;
     }
+
     .man-img {
         margin-left: 70px;
         max-height: 100%;
     }
+
     .bucket-img {
         margin-bottom: 150px;
         max-height: 300px;
-        margin-left:0px;
+        margin-left: 0px;
     }
 }
+
 /*end for carousel*/
 /*styling of products*/
 .products {
@@ -719,10 +795,12 @@ body{
     background-color: rgba(255, 255, 255, 0.75);
     background-blend-mode: lighten;
 }
+
 .container {
     background-color: transparent;
     padding: 20px;
 }
+
 .icon-circles {
     flex-shrink: 0;
     width: 30px;
@@ -733,20 +811,24 @@ body{
     justify-content: center;
     align-items: center;
 }
-.icon-circles{
-    margin-left:100px;
-    size:20px;
+
+.icon-circles {
+    margin-left: 100px;
+    size: 20px;
 
 }
+
 .icon-circles i {
     font-size: 1.2rem;
     color: #000;
     transform: rotate(-30deg);
     transition: transform 0.5s ease;
 }
+
 .icon-circles:hover i {
     transform: rotate(0deg);
 }
+
 .outer-card {
     background-image: url('../images/cardsbackground.png');
     background-color: #6879d5;
@@ -759,6 +841,7 @@ body{
     text-align: center;
     height: 100%;
 }
+
 .inner-card {
     background-color: #F2F2F2;
     border-top-left-radius: 100px;
@@ -773,17 +856,21 @@ body{
     justify-content: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 .bucket-image {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
+
 .card-content h5 {
     font-size: 1rem;
 }
+
 .card-content p {
     font-size: 0.9rem;
 }
+
 .view-all-btn {
     color: #FF4C4C;
     font-weight: bold;
@@ -791,35 +878,44 @@ body{
     font-size: 1.5rem;
     border-radius: 5px;
 }
-.products .text-center .btn:hover{
-   background-color:#FF4C4C ;
+
+.products .text-center .btn:hover {
+    background-color: #FF4C4C;
 }
-.view-all-btn i{
+
+.view-all-btn i {
     transform: rotate(-30deg);
 }
-.products .view-all-btn i:hover{
-    color:black;
+
+.products .view-all-btn i:hover {
+    color: black;
     transform: rotate(0deg);
     transition: transform 0.5s ease;
 }
+
 @media (max-width: 768px) {
     .outer-card {
         padding: 10px;
     }
+
     .inner-card {
         max-width: 150px;
     }
+
     .bucket-image {
         max-width: 85%;
         max-height: 85%;
     }
+
     .card-content h5 {
         font-size: 0.9rem;
     }
+
     .card-content p {
         font-size: 0.8rem;
     }
 }
+
 /*end of products*/
 /*start of trending colors combinations*/
 .man-image {
@@ -830,14 +926,15 @@ body{
 .slick-carousel {
     padding: 10px 0;
 }
+
 .images-container {
     width: 200px;
     height: 450px;
     border-radius: 10px;
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    display: inline-block; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
 }
 
 .bg-room1 {
@@ -851,13 +948,16 @@ body{
 .bg-room3 {
     background-image: url('../images/room3.png');
 }
-.bg-room4{
+
+.bg-room4 {
     background-image: url('../images/room4.png');
 }
-.bg-room5{
+
+.bg-room5 {
     background-image: url('../images/room5.png');
 }
-.slick-car{
+
+.slick-car {
     background-image: url('../images/blur\ background\ image.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -870,18 +970,20 @@ body{
         margin: 0 auto;
     }
 }
+
 /*end of trending..*/
 /* styling of explore our professional */
-#colorCarousel{
-    background-color:white;
+#colorCarousel {
+    background-color: white;
 }
+
 .imag-container {
-    height: 400px; 
+    height: 400px;
     width: 100%;
-    background-size: cover; 
+    background-size: cover;
     background-position: center;
-    background-repeat: no-repeat; 
-    border-radius: 10px; 
+    background-repeat: no-repeat;
+    border-radius: 10px;
 }
 
 .bg-slide1 {
@@ -895,12 +997,14 @@ body{
 .bg-slide3 {
     background-image: url('../images/multi-slide-carousel-slide1.png');
 }
-.bg-slide4{
+
+.bg-slide4 {
     background-image: url('../images/multi-slide-carousel-slide4.png');
 }
 
 .slick-slide {
     padding-left: 5px;
-    padding-right: 5px; 
+    padding-right: 5px;
 }
+
 /*end*/

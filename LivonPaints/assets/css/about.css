@@ -50,7 +50,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: auto;
     margin-top: 6%;
+    width: 95%;
     padding: 2rem;
 }
 
@@ -113,8 +115,8 @@
     display: flex;
     align-items: center;
     background: #f5f0ed;
-    /* max-width: 1000px; */
-    margin: 20px auto;
+    width: 92%;
+    margin: auto;
     gap: 4%;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
 }
@@ -175,9 +177,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    margin: 50px auto;
-    background: rgba(255, 255, 255, 0.9);
+    width: 95%;
+    margin: auto;
+    background:transparent;
     padding: 30px;
     border-radius: 10px;
 }
