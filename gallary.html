@@ -232,10 +232,10 @@
                     <div class="decription" style="padding: 3%;">
                         <h5>Livon – Your Trusted Color Choice, Making Walls Rejoice!</h5>
                         <p class="text-muted small">Receive exclusive Updates, Industry News & Expert tips</p>
-                        <div class="input-group">
-                            <input type="email" class="form-control" placeholder="Enter Your Email">
-                            <button class="btn text-white fw-bold "> Subscribe Now!</button>
-                        </div>
+                        <form class="input-group" action="email.php" method="post">
+                            <input name="email" type="email" class="form-control" placeholder="Enter Your Email">
+                            <button class="btn text-white fw-bold " type="submit"> Subscribe Now!</button>
+                        </form>
                     </div>
                     <!-- Office -->
                     <div class="connect">
@@ -267,6 +267,13 @@
             </div>
             <br><br>
         </footer>
+
+         <!--pop up cards-->
+         <div id="popup-message" class="popup">
+            <h2 id="popup-heading" class="pop-up-heading"></h2>
+            <p id="popup-para" class="pop-up-para"></p>
+            <button id="close-popup" class="close-btn">Close</button>
+        </div>
 
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

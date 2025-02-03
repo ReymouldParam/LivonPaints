@@ -68,26 +68,26 @@
         <!-- contact form -->
         <section class="section1">
             <div class="container-contact">
-                <div class="form-section">
+                <form class="form-section" action="contact.php" method="post">
                     <h1>Get In Touch</h1>
                     <p>Got any Questions About the product? We're here to help. Chat to our Friendly Team. Got any
                         Questions About the product?</p>
                     <form>
                         <div class="form-group">
-                            <input type="text" placeholder="First Name" required>
-                            <input type="text" placeholder="Last Name" required>
+                            <input type="text" name="firstName" placeholder="First Name" required>
+                            <input type="text" name="lastName" placeholder="Last Name" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" placeholder="Phone" required>
-                            <input type="email" placeholder="Email" required>
+                            <input type="number" name="number" placeholder="Phone" required>
+                            <input type="email" name="email" placeholder="Email" required>
                         </div>
                         <div class="form-group">
-                            <textarea id="message" placeholder="Message" maxlength="300"></textarea>
+                            <textarea id="message" name="message" placeholder="Message" maxlength="300"></textarea>
                         </div>
                         <p id="charCount" class="char-count">0/300 </p>
                         <button type="submit">Send</button>
                     </form>
-                </div>
+                </form>
                 <div class="image-section">
                     <p class="para">
                         Since inception, Livon Paints has been delivering quality paints where quality has always met
@@ -105,8 +105,8 @@
                 class="map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
 
-         <!-- section5 -->
-         <footer>
+        <!-- section5 -->
+        <footer>
             <div class="container text-center" style="padding: 2%;">
                 <h1 class="fw-bold">Book Your Color Consultation To Refresh Your Space!</h1>
                 <p class="text-muted fs-5">Click Here for Exclusive Offers & Discounts</p>
@@ -119,10 +119,10 @@
                     <div class="decription" style="padding: 3%;">
                         <h5>Livon – Your Trusted Color Choice, Making Walls Rejoice!</h5>
                         <p class="text-muted small">Receive exclusive Updates, Industry News & Expert tips</p>
-                        <div class="input-group">
-                            <input type="email" class="form-control" placeholder="Enter Your Email">
-                            <button class="btn text-white fw-bold "> Subscribe Now!</button>
-                        </div>
+                        <form class="input-group" action="email.php" method="post">
+                            <input name="email" type="email" class="form-control" placeholder="Enter Your Email">
+                            <button class="btn text-white fw-bold " type="submit"> Subscribe Now!</button>
+                        </form>
                     </div>
                     <!-- Office -->
                     <div class="connect">
@@ -154,9 +154,15 @@
             </div>
             <br><br>
         </footer>
+         <!--pop up cards-->
+         <div id="popup-message" class="popup">
+            <h2 id="popup-heading" class="pop-up-heading"></h2>
+            <p id="popup-para" class="pop-up-para"></p>
+            <button id="close-popup" class="close-btn">Close</button>
+        </div>
     </div>
-     <!-- navbar -->
-     <script src="assets/navbar.js"></script>
+    <!-- navbar -->
+    <script src="assets/navbar.js"></script>
 </body>
 
 </html>
