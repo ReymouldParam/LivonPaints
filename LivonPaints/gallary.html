@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,14 +11,17 @@
     <link rel="stylesheet" href="assets/css/gallary.css" />
     <!-- boostrap -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
-    integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-      <!-- slick -->
- <!-- Slick CSS (Use CDN to avoid file issues) -->
- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+        integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- slick -->
+    <!-- Slick CSS (Use CDN to avoid file issues) -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
 
 </head>
+
 <body>
     <div>
         <!-- navbar -->
@@ -47,58 +51,129 @@
                 </button>
             </div>
         </nav>
-         <!-- colour section -->
-         <div class="color-slider"></div>
-         <!-- section1 -->
-         <section class="section1">
+        <!-- colour section -->
+        <div class="color-slider"></div>
+        <!-- section1 -->
+        <section class="section1">
             <div class="filters-con">
                 <!-- Categories Section -->
                 <div class="category-filters">
                     <p>All Categories</p>
-                    <ul>
-                        <li>Interior</li>
-                        <li>Exterior</li>
-                        <li>Water Proofing</li>
-                        <li>Crystal Ceiling</li>
+                    <ul class="categories">
+                        <li class="category-item active" data-category="all">All Categories</li>
+                        <li class="category-item" data-category="interior">Interior Paints</li>
+                        <li class="category-item" data-category="exterior">Exterior Paints</li>
+                        <!-- <div class="category-item" data-category="waterproofing">Water Proofing</div>
+                        <div class="category-item" data-category="putties">Putties</div> -->
                     </ul>
                 </div>
-        
-                <!-- Gallery Section -->
-                <div class="paint-card-container">
+
+                <!-- Gallery Section1 -->
+                <div class="paint-card-container" data-category="all">
                     <!-- Paint Card 1 -->
                     <div class="paint-card">
                         <img src="assets/images/gallary-img1.png" alt="Interior Paint">
-                       
+
                     </div>
-        
+
                     <!-- Paint Card 2 -->
                     <div class="paint-card">
                         <img src="assets/images/gallary-img2.png" alt="Exterior Paint">
-                   
+
                     </div>
-        
+
                     <!-- Paint Card 3 -->
                     <div class="paint-card">
                         <img src="assets/images/gallary-img3.png" alt="Waterproof Paint">
-                      
+
                     </div>
-        
+
                     <!-- Paint Card 4 -->
                     <div class="paint-card">
                         <img src="assets/images/gallary-img4.png" alt="Ceiling Paint">
-                    
+
                     </div>
-        
+
                     <!-- Paint Card 5 -->
                     <div class="paint-card">
                         <img src="assets/images/gallary-img1.png" alt="Wall Texture">
-               
+
                     </div>
-        
+
                     <!-- Paint Card 6 -->
                     <div class="paint-card">
                         <img src="assets/images/gallary-img2.png" alt="Luxury Paint">
-              
+
+                    </div>
+
+                </div>
+                <!-- Gallery section2 -->
+                <div class="paint-card-container" data-category="Interior">
+
+                    <!-- Paint Card 2 -->
+                    <div class="paint-card">
+                        <img src="assets/images/gallary-img2.png" alt="Exterior Paint">
+
+                    </div>
+                    <!-- Paint Card 1 -->
+                    <div class="paint-card">
+                        <img src="assets/images/gallary-img1.png" alt="Interior Paint">
+
+                    </div>
+
+                    <!-- Paint Card 3 -->
+                    <div class="paint-card">
+                        <img src="assets/images/gallary-img3.png" alt="Waterproof Paint">
+
+                    </div>
+
+                    <!-- Paint Card 4 -->
+                    <div class="paint-card">
+                        <img src="assets/images/gallary-img4.png" alt="Ceiling Paint">
+
+                    </div>
+
+                    <!-- Paint Card 5 -->
+                    <div class="paint-card">
+                        <img src="assets/images/gallary-img1.png" alt="Wall Texture">
+
+                    </div>
+
+                    <!-- Paint Card 6 -->
+                    <div class="paint-card">
+                        <img src="assets/images/gallary-img2.png" alt="Luxury Paint">
+
+                    </div>
+                </div>
+                <!-- Gallery section3 -->
+                <div class="paint-card-container" data-category="Exterior">
+                    <!-- Paint Card 3 -->
+                    <div class="paint-card">
+                        <img src="assets/images/gallary-img3.png" alt="Waterproof Paint">
+
+                    </div>
+                    <!-- Paint Card 1 -->
+                    <div class="paint-card">
+                        <img src="assets/images/gallary-img1.png" alt="Interior Paint">
+
+                    </div>
+
+                    <!-- Paint Card 4 -->
+                    <div class="paint-card">
+                        <img src="assets/images/gallary-img4.png" alt="Ceiling Paint">
+
+                    </div>
+
+                    <!-- Paint Card 5 -->
+                    <div class="paint-card">
+                        <img src="assets/images/gallary-img1.png" alt="Wall Texture">
+
+                    </div>
+
+                    <!-- Paint Card 6 -->
+                    <div class="paint-card">
+                        <img src="assets/images/gallary-img2.png" alt="Luxury Paint">
+
                     </div>
                 </div>
             </div>
@@ -135,7 +210,7 @@
                 <p class="text-muted fs-5">Click Here for Exclusive Offers & Discounts</p>
                 <button class="btn text-white fw-bold" style="background-color: #293B9D;">Get In Touch Now!</button>
             </div>
-    
+
             <div class="footer-section container">
                 <div class="footer">
                     <!-- Subscription -->
@@ -180,24 +255,25 @@
 
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
-  <script>
-      $(document).ready(function () {
-          $('.fade-con').slick({
-              dots: true,
-              infinite: true,
-              speed: 500,
-              arrows:false,
-              autoplay:true,
-              fade: true,
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              cssEase: 'linear'
-          });
-      });
-  </script>
-   <!-- navbar -->
-   <script src="assets/navbar.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.fade-con').slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                arrows: false,
+                autoplay: true,
+                fade: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                cssEase: 'linear'
+            });
+        });
+    </script>
+    <!-- navbar -->
+    <script src="assets/navbar.js"></script>
 </body>
+
 </html>

@@ -45,6 +45,7 @@
     }
 }
 
+
 .section1 {
     background-color: #f8f8f8;
     width:100%;
@@ -55,6 +56,7 @@
 /* Filter Section */
 .filters-con {
     display: flex;
+    flex-direction: column;
     justify-content:center;
     gap: 5%;
     width: 90%;
@@ -70,30 +72,33 @@
     /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
 }
 
-.category-filters p {
-    font-size: 20px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
+.categories {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
-.category-filters ul {
-    list-style: none;
-    padding: 0;
-}
-
-.category-filters li {
-    font-size: 16px;
-    color: #555;
-    padding: 10px 0;
-    border-bottom: 1px solid #ddd;
+.category-item {
+    padding: 10px 15px;
+    border-radius: 4px;
     cursor: pointer;
-    transition: color 0.3s;
+    width: 150px;
+    margin-left:20px !important;
+    transition: background-color 0.3s, color 0.3s;
+    user-select: none;
+    list-style-type: none;
 }
 
-.category-filters li:hover {
-    color: #e53935;
+.category-item:hover {
+    background-color: #e0e0e0;
 }
+
+.category-item.active {
+    background-color:var(--primary-color);
+    color: #fff;
+}
+
 
 /* Gallery Grid */
 .paint-card-container {
@@ -104,6 +109,8 @@
     width: 100%;
     margin-top: 15px;
     margin-bottom: 15px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    
 }
 
 /* Paint Cards */
@@ -112,11 +119,27 @@
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
     cursor: pointer;
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .paint-card:hover {
     transform: translateY(-5px);
     /* box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); */
+}
+
+.paint-section {
+    display: none; /* Initially hidden */
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.paint-section.active {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    opacity: 1;
+    transform: scale(1);
 }
 
 /* Paint Image */

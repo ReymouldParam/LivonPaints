@@ -1,28 +1,35 @@
 /* Container for the moving background */
 .color-slider {
     width: 100%;
-    height:20px;
+    height: 20px;
     overflow: hidden;
     position: relative;
-    top:80px;
+    top: 80px;
 }
 
 /* The actual animated background */
 .color-slider::before {
     content: "";
     position: absolute;
-    width: 300%; /* Extend width for a seamless transition */
+    width: 300%;
+    /* Extend width for a seamless transition */
     height: 100%;
-    background: repeating-linear-gradient(
-        to right, 
-        #428bca 0px, #428bca 250px,  /* Blue */
-        #f4c2c2 250px, #f4c2c2 500px, /* Pink */
-        #fdb833 500px, #fdb833 750px, /* Yellow */
-        #d4af37 750px, #d4af37 1000px, /* Gold */
-        #b68e6a 1000px, #b68e6a 1250px, /* Brown */
-        #d4af37 1250px, #d4af37 1500px, /* Gold */
-        #4682b4 1500px, #4682b4 1750px /* Steel Blue */
-    );
+    background: repeating-linear-gradient(to right,
+            #428bca 0px, #428bca 250px,
+            /* Blue */
+            #f4c2c2 250px, #f4c2c2 500px,
+            /* Pink */
+            #fdb833 500px, #fdb833 750px,
+            /* Yellow */
+            #d4af37 750px, #d4af37 1000px,
+            /* Gold */
+            #b68e6a 1000px, #b68e6a 1250px,
+            /* Brown */
+            #d4af37 1250px, #d4af37 1500px,
+            /* Gold */
+            #4682b4 1500px, #4682b4 1750px
+            /* Steel Blue */
+        );
     animation: slideColors 10s linear infinite;
 }
 
@@ -31,14 +38,17 @@
     0% {
         transform: translateX(-50%);
     }
+
     100% {
         transform: translateX(0);
     }
 }
+
 /* contact form */
-.section1{
+.section1 {
     margin-top: 6%;
 }
+
 .container-contact {
     display: flex;
     background-color: white;
@@ -58,7 +68,7 @@
 
 .form-section h1 {
     font-size: 24px;
-    color:#2c3e8f;
+    color: #2c3e8f;
     font-weight: bold;
     margin-bottom: 20px;
 }
@@ -122,6 +132,7 @@
     color: #777;
     margin-top: -10px;
 }
+
 textarea {
     width: 100%;
     padding: 10px;
@@ -140,7 +151,7 @@ textarea {
     outline: none;
     resize: none;
     height: 100px;
-    margin-top:50px;
+    margin-top: 50px;
 }
 
 .form-section button {
@@ -161,11 +172,11 @@ textarea {
 }
 
 .image-section {
-   
+
     background-image: url('../images/contact-bg-2.png');
     background-repeat: no-repeat;
     background-position: center;
-    background-size:contain;
+    background-size: contain;
     width: 100%;
     height: 80vh;
     border-radius: 15px;
@@ -177,20 +188,22 @@ textarea {
 
 .image-section .para {
     font-size: 14px;
-    color:white;
+    color: white;
     line-height: 1.6;
     text-align: center;
-    width:50%;
-    padding: 15px; /* Adds subtle readability */
+    width: 50%;
+    padding: 15px;
+    /* Adds subtle readability */
     border-radius: 10px;
 }
 
-.map{
+.map {
     width: 100%;
     height: 200px;
 }
+
 /* unlock */
-.unlock-con{
+.unlock-con {
     display: flex;
     flex-direction: column;
     align-items: center;
