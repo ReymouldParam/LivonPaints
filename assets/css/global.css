@@ -30,6 +30,11 @@
     height: auto;
     padding-left: 2%;
 }
+@media screen and (min-width:1024px) and (max-width:1280px){
+    .logo-container{
+        padding-left: 4%;
+    }
+}
 
 .logo {
     width: 100px;

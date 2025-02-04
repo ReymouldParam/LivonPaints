@@ -651,6 +651,11 @@
     width: 50%;
     text-align: left;
 }
+@media screen and (min-width:1024px) and (max-width:1280px){
+    .myro-con {
+        margin-left: 5%;
+    }
+}
 
 .fade-con {
     width: 100%;
