@@ -406,14 +406,17 @@
     /* Categories Adjustment */
     .categories {
         align-items: center !important;
-        /* width: 40%; */
+        width: 100%;
         margin: auto;
-        /* margin-top: 25px; */
+        flex-direction: row;
     }
 
     .category-item {
         width: 100%;
         margin-left: 0 !important;
+        padding: 0;
+        padding-left: 5px;
+        text-align: center;
     }
 
     /* Paint Cards Adjustments */
@@ -646,7 +649,6 @@
         opacity: 1;
     }
 }
-
 .myro-con {
     width: 50%;
     text-align: left;

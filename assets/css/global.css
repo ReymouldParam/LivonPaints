@@ -28,7 +28,7 @@
 .logo-container {
     width: 100px;
     height: auto;
-    padding-left: 2%;
+    padding-left: 4%;
 }
 @media screen and (min-width:1024px) and (max-width:1280px){
     .logo-container{
