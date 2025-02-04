@@ -6,7 +6,15 @@
     position: relative;
     top: 80px;
 }
-
+@media screen and (min-width:1550px){
+    .color-slider {
+        width: 100%;
+        height: 20px;
+        overflow: hidden;
+        position: relative;
+        top: 100px;
+    }
+}
 @media screen and (max-width:768px) {
     .color-slider {
         top: 50px;
@@ -204,12 +212,58 @@ textarea {
     border-radius: 10px;
 }
 
+@media screen and (min-width: 1550px) {
+    .container-contact {
+        width: 80%;
+        max-width: 1400px;
+        margin: 50px auto;
+        height: 90vh;
+        padding: 2%;
+    }
+
+    .form-section {
+        padding: 50px;
+    }
+
+    .form-section h1 {
+        font-size: 28px;
+    }
+
+    .form-section p {
+        font-size: 16px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 16px;
+        padding: 18px;
+    }
+
+    .form-section button {
+        font-size: 18px;
+        padding: 12px 24px;
+        margin-top: 60px;
+    }
+
+    .image-section {
+        height: 80vh;
+        background-size: cover;
+        border-radius: 20px;
+    }
+
+    .image-section .para {
+        font-size: 16px;
+        width: 60%;
+        padding: 20px;
+    }
+}
+
+
 @media screen and (min-width:1024px) and (max-width:1280px) {
     .image-section .para {
         width: 70%;
     }
 }
-
 .map {
     width: 100%;
     height: 200px;
@@ -292,7 +346,7 @@ textarea {
         background-position: center;
         background-size: cover;
         width: 90%;
-        height: 75vh;
+        height: 45vh;
         border-radius: 10px;
         display: flex;
         align-items: flex-end;

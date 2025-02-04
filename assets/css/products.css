@@ -6,8 +6,18 @@
     position: relative;
     top: 80px;
 }
-@media screen and (max-width:768px){
-    .color-slider{
+
+@media screen and (min-width:1550px){
+    .color-slider {
+        width: 100%;
+        height: 20px;
+        overflow: hidden;
+        position: relative;
+        top: 100px;
+    }
+}
+@media screen and (max-width:768px) {
+    .color-slider {
         top: 50px;
     }
 }
@@ -181,11 +191,12 @@
     transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
-@media screen and (max-width:768px){
-    .filters-con{
+@media screen and (max-width:768px) {
+    .filters-con {
         border: none;
     }
 }
+
 .filters-con.show {
     opacity: 1;
     transform: translateY(0);
@@ -564,6 +575,35 @@
     color: #333;
 }
 
+@media screen and (min-width:1550px) {
+    .feature-card {
+        background: #fff;
+        border: 2px solid #F6A46D;
+        border-radius: 10px;
+        padding: 20px;
+        display: flex;
+        width: 300px;
+        height: 300px;
+        text-align: center;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .brush-image {
+        max-width: 35%;
+        height: auto;
+        z-index: 6;
+        position: relative;
+    }
+    .features-title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+}
+
 /* mobile view  */
 @media screen and (max-width: 768px) {
     .features-section {
@@ -649,11 +689,13 @@
         opacity: 1;
     }
 }
+
 .myro-con {
     width: 50%;
     text-align: left;
 }
-@media screen and (min-width:1024px) and (max-width:1280px){
+
+@media screen and (min-width:1024px) and (max-width:1280px) {
     .myro-con {
         margin-left: 5%;
     }
@@ -730,6 +772,17 @@
     .align-con img {
         max-width: 80%;
         height: auto;
+    }
+}
+
+
+@media screen and (min-width:1550px) {
+    .align-con {
+        display: flex;
+        align-items: center;
+        justify-content: space-between !important;
+        gap: 10%;
+        width: 90%;
     }
 }
 
@@ -949,10 +1002,12 @@
         padding: 5%;
         text-align: center;
     }
-    .fw-bold{
+
+    .fw-bold {
         font-size: 20px;
     }
-    .fs-5{
+
+    .fs-5 {
         font-size: 20px !important;
     }
 

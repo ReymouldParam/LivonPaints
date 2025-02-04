@@ -6,6 +6,15 @@
     position: relative;
     top: 80px;
 }
+@media screen and (min-width:1550px){
+    .color-slider {
+        width: 100%;
+        height: 20px;
+        overflow: hidden;
+        position: relative;
+        top: 100px;
+    }
+}
 
 @media screen and (max-width:768px) {
     .color-slider {
@@ -69,6 +78,11 @@
     margin: auto;
 }
 
+@media screen and (min-width:1550px){
+    .filters-con{
+        max-width: 1850px;
+    }
+}
 /* Category Filters */
 .category-filters {
     width: 250px;
@@ -157,6 +171,15 @@
     height: auto;
     border-radius: 5px;
 }
+@media screen and (min-width:1550px){
+    .paint-card img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        border-radius: 5px;
+        margin: 7%;
+    }
+}
 
 /* Paint Title */
 .paint-title {
@@ -190,6 +213,7 @@
         margin-top: 20px;
 
     }
+
     .categories {
         align-items: center !important;
         width: 100%;
@@ -277,11 +301,23 @@
     width: 50%;
     text-align: left;
 }
-@media screen and (min-width:1024px) and (max-width:1280px){
+
+@media screen and (min-width:1024px) and (max-width:1280px) {
     .myro-con {
         margin-left: 5%;
     }
 }
+
+@media screen and (min-width:1550px) {
+    .align-con {
+        display: flex;
+        align-items: center;
+        justify-content: space-between !important;
+        gap: 10%;
+        width: 90%;
+    }
+}
+
 .fade-con {
     width: 100%;
     max-width: 400px;

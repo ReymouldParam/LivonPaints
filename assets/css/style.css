@@ -166,17 +166,24 @@ body {
     }
 
     .images {
-        margin-top: -50px;
-        margin-left: 15%;
-        justify-content: center;
-        gap: 50px;
-        margin-top: 80px;
+        margin-top: 10%;
     }
 
-    .chairs img,
-    .buckets img {
-        max-width: 100%;
-        height: 350px;
+    .images .chairs,
+    .images .buckets {
+        max-width: 30%;
+        margin-top: 350px;
+        margin-right: -100px;
+    }
+
+    .side-text {
+        position: absolute;
+        margin-top: 20px;
+        right: -505px;
+        transform: rotate(-90deg) translate(50%, -50%);
+        font-size: 0.75rem;
+        color: white;
+        text-align: center;
     }
 }
 
@@ -318,27 +325,14 @@ body {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        margin-left: 0;
+        margin: 0;
+        margin-top: 40px;
     }
 
     .images .chairs,
     .images .buckets {
         max-width: 50%;
-        margin-top: 370px;
-    }
-
-    .images .chairs img {
-        width: 100%;
-        height: 100px;
-        margin-top: 50px;
-        /* margin-right: 40px; */
-        margin-left: -40px;
-    }
-
-    .images .buckets img {
-        width: 100%;
-        height: 100px;
-        margin-top: 50px;
+        margin-top: 350px;
     }
 
     .text-container {
@@ -378,13 +372,6 @@ body {
         flex-direction: column;
         align-items: center;
         margin: 0;
-    }
-
-    .images .chairs img {
-        margin-top: 127px !important;
-        width: 100%;
-        height: 200px;
-        margin-left: 40%;
     }
 
     .text-container {
@@ -482,8 +469,6 @@ body {
         padding: 0px;
     }
 }
-
-
 
 /*end of background carousel*/
 /*styling for you looking for*/
@@ -1013,11 +998,6 @@ body {
     display: inline-block;
 }
 
-@media screen and (min-width:1550px) {
-    .images-container {
-        height: 525px;
-    }
-}
 
 .bg-room1 {
     background-image: url('../images/room1.png');
@@ -1052,9 +1032,6 @@ body {
         margin: 0 auto;
     }
 
-    .images-container {
-        height: 500px;
-    }
 }
 
 /*end of trending..*/
@@ -1071,6 +1048,8 @@ body {
     background-repeat: no-repeat;
     border-radius: 10px;
 }
+
+
 
 .bg-slide1 {
     background-image: url('../images/multi-slide-carousel-slide2.png');
@@ -1093,4 +1072,9 @@ body {
     padding-right: 5px;
 }
 
+@media screen and (min-width:1550px){
+    .right-section{
+        margin-right: 2%;
+    }
+}
 /*end*/
