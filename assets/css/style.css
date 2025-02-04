@@ -480,6 +480,7 @@ body {
 
 .paint-options h2 {
     margin-bottom: 10px;
+    font-size: 30px;
 }
 
 .btn-card {
@@ -1075,6 +1076,19 @@ body {
 @media screen and (min-width:1550px){
     .right-section{
         margin-right: 2%;
+    }
+    .fw-bold{
+        font-size: 30px;
+    }
+    .text-muted{
+        font-size: 18px;
+        padding-bottom: 40px;
+    }
+    .all-services{
+        font-size: 30px;
+    }
+    .all-service-para{
+        font-size: 18px;
     }
 }
 /*end*/

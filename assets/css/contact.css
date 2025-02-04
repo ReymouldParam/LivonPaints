@@ -105,7 +105,7 @@
     flex: 1;
     padding: 20px;
     font-size: 14px;
-    border: none;
+    border: 1px solid #2c3e8f;
     border-bottom: 2px solid #ccc;
     outline: none;
     background: transparent;

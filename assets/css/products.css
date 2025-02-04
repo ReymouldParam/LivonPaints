@@ -64,6 +64,7 @@
     padding-top: 8%;
     display: flex;
     gap: 4%;
+    background-color: #FFF7EE;
 }
 
 .product-card {
@@ -180,7 +181,7 @@
 }
 
 .filters-con {
-    border: 1px solid lightblue;
+    /* border: 1px solid lightblue; */
     padding: 15px;
     border-radius: 4px;
     margin-bottom: 10px;
@@ -536,9 +537,9 @@
 
 /* Section Title */
 .features-title {
-    font-size: 24px;
+    font-size: 30px;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
 }
 
 /* Features Grid */
@@ -570,7 +571,7 @@
 
 /* Feature Text */
 .feature-text {
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 600;
     color: #333;
 }
