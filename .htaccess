@@ -1,0 +1,22 @@
+RewriteEngine On
+
+# Redirect to https://www.miaavi.com
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} !^www\.livon.reymould/\.com$ [NC]
+RewriteRule ^(.*)$ https://www.livon.reymould.com/$1 [L,R=301]
+
+# Existing rules
+# Rewrite Condition for Directory
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Rewrite Condition for File
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# Rewrite Rule
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+# Disable directory listing
+Options -Indexes
+
+# This rule allows user to access file
+RewriteCond %{REQUEST_FILENAME} !-f
