@@ -6,7 +6,8 @@
     position: relative;
     top: 80px;
 }
-@media screen and (min-width:1550px){
+
+@media screen and (min-width:1550px) {
     .color-slider {
         width: 100%;
         height: 20px;
@@ -67,23 +68,25 @@
     gap: 4%;
     background-color: #FFF7EE;
     height: 100vh;
-    overflow: hidden; /* Prevent scrolling for the entire section */
+    overflow: hidden;
+    /* Prevent scrolling for the entire section */
 
 }
 
 
-@media screen and (min-width:1550px){
-    .filters-con{
+@media screen and (min-width:1550px) {
+    .filters-con {
         max-width: 1850px;
     }
 }
+
 /* Category Filters */
 .category-filters {
     display: flex;
     flex-direction: column;
     gap: 10px;
     margin-bottom: 20px;
-    margin-top:3%;
+    margin-top: 3%;
 }
 
 .categories {
@@ -138,31 +141,38 @@
 
 /* Scrollbar for Webkit browsers */
 .products-container::-webkit-scrollbar {
-    width: 10px; /* Increase width for better visibility */
+    width: 10px;
+    /* Increase width for better visibility */
 }
 
 .products-container::-webkit-scrollbar-track {
-    background: #1a1a1a; /* Darker background for contrast */
+    background: #1a1a1a;
+    /* Darker background for contrast */
     border-radius: 6px;
 }
 
 .products-container::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg,  
-        #21A366, #00A3E0, #7030A0, 
-        #C00000, #FF8C00, #548235, #002BFF);
+    background: linear-gradient(180deg,
+            #21A366, #00A3E0, #7030A0,
+            #C00000, #FF8C00, #548235, #002BFF);
     border-radius: 10px;
-    border: 2px solid #f1f1f1; /* Light border for better definition */
+    border: 2px solid #f1f1f1;
+    /* Light border for better definition */
 }
 
 /* Products Container Section */
 .products-container {
-    flex-grow: 1; /* Takes remaining space */
-    overflow-y: auto; /* Scroll applied to products */
-    direction: rtl; /* Moves scrollbar to the left side */
+    flex-grow: 1;
+    /* Takes remaining space */
+    overflow-y: auto;
+    /* Scroll applied to products */
+    direction: rtl;
+    /* Moves scrollbar to the left side */
 }
 
-.products-container > * {
-    direction: ltr; /* Ensures content stays left-aligned */
+.products-container>* {
+    direction: ltr;
+    /* Ensures content stays left-aligned */
 }
 
 
@@ -219,7 +229,8 @@
     border-radius: 5px;
     margin: 20px;
 }
-@media screen and (min-width:1550px){
+
+@media screen and (min-width:1550px) {
     .paint-card img {
         width: 100%;
         max-width: 400px;
@@ -227,7 +238,8 @@
         border-radius: 5px;
         margin: 20px;
     }
-    .paint-card-container{
+
+    .paint-card-container {
         margin-top: 0;
     }
 }
@@ -248,6 +260,8 @@
     .section1 {
         margin-top: 5%;
         padding: 15px;
+        display: flex;
+        flex-direction: column
     }
 
     /* Filters Container */
