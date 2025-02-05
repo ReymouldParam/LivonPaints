@@ -62,7 +62,7 @@
 
 /* section1 */
 .section1 {
-    padding-top: 8%;
+    padding-top: 5%;
     display: flex;
     gap: 4%;
     background-color: #FFF7EE;
@@ -153,6 +153,7 @@
     flex-direction: column;
     gap: 10px;
     margin-bottom: 20px;
+    margin-top:3%;
 }
 
 .category-item {
@@ -246,12 +247,12 @@
     top: 30px;
     left: 35px;
     width: 250px;
-    height: 270px;
+    height: 290px;
     background: #ffffff;
     border-radius: 10px;
     z-index: 0;
     border-radius: 0;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -350,10 +351,22 @@
     z-index: 4;
 }
 
+.image-container::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    width: 180px;
+    height: 150px;
+    margin-top:40px;
+    text-align: center;
+    border: 5px solid white; /* Square border */
+    z-index: -1; /* Places it behind the image */
+}
+
 .paint-image {
-    border: 4px solid white;
-    width: 150px;
-    height: 180px;
+    /* border: 4px solid white; */
+    width: 180px;
+    height: 200px;
     border-radius: 5px;
 }
 
@@ -398,15 +411,41 @@
 .arrow {
     font-size: 25px; /* Adjusted to fit inside the container */
     color: black;
-    transform: rotate(-45deg); /* Corrected rotation */
+    transform: rotate(-45deg);
+    transition: all 0.5s; /* Corrected rotation */
 }
-
+.arrow-container:hover .arrow {
+    transform: rotate(0deg); /* Rotates to point right on hover */
+}
 
 @media screen and (min-width:1550px) {
 
     .paint-card-background {
+        top: 40px;
+        left: 40px;
         width: 300px;
-        height: 300px;
+        height: 320px;
+    }
+
+    .paint-image{
+        width: 100%;
+        height:220px;
+        border-radius: 5px;
+        margin-top: -12px;
+
+    }
+
+    .image-container::before {
+        content: "";
+        position: absolute;
+        top: 15px;
+        right:17%;
+        width: 200px;
+        height: 180px;
+        margin-top:40px;
+        text-align: center;
+        border: 5px solid white; /* Square border */
+        z-index: -1; /* Places it behind the image */
     }
 
     .paint-card,
@@ -416,26 +455,39 @@
     .paint-card5,
     .paint-card6 {
         width: 300px;
-        height: 300px;
+        height: 320px;
 
     }
 
     .paint-details {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
+        gap: 12%;
         width: 100%;
-        margin-top: 15%;
+        margin-top:30px;
     }
 
     .arrow-container {
-        width: 50px;
-        height: 50px;
+        background: white;
+        width: 40px; /* Increased size for better visibility */
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border-radius: 50%;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     }
+    
     .arrow {
-        font-size: 30px;
+        font-size: 25px; /* Adjusted to fit inside the container */
         color: black;
-        transform: rotateY(45deg); /* Corrected */
+        transform: rotate(-45deg);
+        transition: all 0.5s; /* Corrected rotation */
+    }
+    .arrow-container:hover .arrow {
+        transform: rotate(0deg); /* Rotates to point right on hover */
     }
     
 }
