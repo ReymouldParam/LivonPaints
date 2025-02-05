@@ -269,41 +269,6 @@ body {
     }
 }
 
-
-@media screen and (max-width: 768px) {
-    .content {
-        top: 0%;
-        left: 70px;
-        max-width: calc(100% - 80px);
-    }
-
-    .content h1 {
-        font-size: 2.2rem;
-    }
-
-    .content p {
-        font-size: 0.75rem;
-    }
-
-    .side-text {
-        font-size: 0.75rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transform: none;
-        position: relative;
-        left: 0px;
-    }
-
-    .content .buttons {
-        padding: 0px;
-    }
-
-    .content .text-btn-down {
-        padding: 0px;
-    }
-}
-
 /* Tablet */
 @media screen and (max-width: 992px) {
     .content {
@@ -349,6 +314,41 @@ body {
     }
 }
 
+@media screen and (max-width: 768px) {
+    .content {
+        top: 0%;
+        left: 70px;
+        max-width: calc(100% - 80px);
+    }
+
+    .content h1 {
+        font-size: 2.2rem;
+    }
+
+    .content p {
+        font-size: 0.75rem;
+    }
+
+    .side-text {
+        font-size: 0.75rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: none;
+        position: relative;
+        left: 0px;
+    }
+
+    .content .buttons {
+        padding: 0px;
+    }
+
+    .content .text-btn-down {
+        padding: 0px;
+    }
+}
+
+
 /* Large mobile */
 @media screen and (max-width: 576px) {
     .content {
@@ -368,10 +368,19 @@ body {
     }
 
     .images {
-        display: none;
+        display: flex;
         flex-direction: column;
         align-items: center;
         margin: 0;
+        height: auto;
+    }
+    .images .chairs{
+        display: none;
+    }
+    .images .buckets img {
+        width: 180px;
+        height: 100px;
+        margin-top: 70px;
     }
 
     .text-container {
@@ -381,7 +390,7 @@ body {
 
     .content .buttons {
         padding: 0px;
-        margin-bottom: 15%;
+        margin-bottom: 0%;
         font-size: 14px;
         line-height: 15px;
     }
@@ -408,7 +417,7 @@ body {
         font-size: 0.75rem;
     }
 
-    .images {
+    /* .images {
         flex-direction: row;
         align-items: center;
     }
@@ -417,7 +426,7 @@ body {
     .images .buckets {
         max-width: 50%;
         margin-top: 400px;
-    }
+    } */
 
     .text-container {
         display: block;
@@ -450,11 +459,11 @@ body {
         font-size: 0.75rem;
     }
 
-    .images .chairs,
+    /* .images .chairs,
     .images .buckets {
         max-width: 95%;
         margin-top: 350px;
-    }
+    } */
 
     .text-container {
         display: block;

@@ -67,7 +67,8 @@
     gap: 4%;
     background-color: #FFF7EE;
     height: 100vh;
-    overflow: hidden; /* Prevent scrolling for the entire section */
+    overflow: hidden;
+    /* Prevent scrolling for the entire section */
 }
 
 .product-card {
@@ -155,7 +156,7 @@
     flex-direction: column;
     gap: 10px;
     margin-bottom: 20px;
-    margin-top:3%;
+    margin-top: 3%;
 }
 
 
@@ -203,31 +204,38 @@
 
 /* Scrollbar for Webkit browsers */
 .products-container::-webkit-scrollbar {
-    width: 10px; /* Increase width for better visibility */
+    width: 10px;
+    /* Increase width for better visibility */
 }
 
 .products-container::-webkit-scrollbar-track {
-    background: #1a1a1a; /* Darker background for contrast */
+    background: #1a1a1a;
+    /* Darker background for contrast */
     border-radius: 6px;
 }
 
 .products-container::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg,  
-        #21A366, #00A3E0, #7030A0, 
-        #C00000, #FF8C00, #548235, #002BFF);
+    background: linear-gradient(180deg,
+            #21A366, #00A3E0, #7030A0,
+            #C00000, #FF8C00, #548235, #002BFF);
     border-radius: 10px;
-    border: 2px solid #f1f1f1; /* Light border for better definition */
+    border: 2px solid #f1f1f1;
+    /* Light border for better definition */
 }
 
 /* Products Container Section */
 .products-container {
-    flex-grow: 1; /* Takes remaining space */
-    overflow-y: auto; /* Scroll applied to products */
-    direction: rtl; /* Moves scrollbar to the left side */
+    flex-grow: 1;
+    /* Takes remaining space */
+    overflow-y: auto;
+    /* Scroll applied to products */
+    direction: rtl;
+    /* Moves scrollbar to the left side */
 }
 
-.products-container > * {
-    direction: ltr; /* Ensures content stays left-aligned */
+.products-container>* {
+    direction: ltr;
+    /* Ensures content stays left-aligned */
 }
 
 .filters-con {
@@ -383,10 +391,12 @@
     top: 20px;
     width: 180px;
     height: 150px;
-    margin-top:40px;
+    margin-top: 40px;
     text-align: center;
-    border: 5px solid white; /* Square border */
-    z-index: -1; /* Places it behind the image */
+    border: 5px solid white;
+    /* Square border */
+    z-index: -1;
+    /* Places it behind the image */
 }
 
 .paint-image {
@@ -424,7 +434,8 @@
 
 .arrow-container {
     background: white;
-    width: 40px; /* Increased size for better visibility */
+    width: 40px;
+    /* Increased size for better visibility */
     height: 40px;
     display: flex;
     align-items: center;
@@ -435,21 +446,26 @@
 }
 
 .arrow {
-    font-size: 25px; /* Adjusted to fit inside the container */
+    font-size: 25px;
+    /* Adjusted to fit inside the container */
     color: black;
     transform: rotate(-45deg);
-    transition: all 0.5s; /* Corrected rotation */
+    transition: all 0.5s;
+    /* Corrected rotation */
 }
+
 .arrow-container:hover .arrow {
-    transform: rotate(0deg); /* Rotates to point right on hover */
+    transform: rotate(0deg);
+    /* Rotates to point right on hover */
 }
 
 /* responsiveness for large screen */
 @media screen and (min-width:1550px) {
-    .section1{
+    .section1 {
         width: 100%;
         margin: auto;
     }
+
     .paint-card-container {
         display: flex;
         justify-content: space-around;
@@ -457,8 +473,9 @@
         flex-wrap: wrap;
         width: 100%;
     }
-    .categories{
-        margin-left:2%;
+
+    .categories {
+        margin-left: 2%;
     }
 
     .paint-card-background {
@@ -468,9 +485,9 @@
         height: 320px;
     }
 
-    .paint-image{
+    .paint-image {
         width: 100%;
-        height:220px;
+        height: 220px;
         border-radius: 5px;
         margin-top: -12px;
 
@@ -480,13 +497,15 @@
         content: "";
         position: absolute;
         top: 15px;
-        right:17%;
+        right: 17%;
         width: 200px;
         height: 180px;
-        margin-top:40px;
+        margin-top: 40px;
         text-align: center;
-        border: 5px solid white; /* Square border */
-        z-index: -1; /* Places it behind the image */
+        border: 5px solid white;
+        /* Square border */
+        z-index: -1;
+        /* Places it behind the image */
     }
 
     .paint-card,
@@ -506,12 +525,13 @@
         align-items: center;
         gap: 40px;
         width: 100%;
-        margin-top:30px;
+        margin-top: 30px;
     }
 
     .arrow-container {
         background: white;
-        width: 40px; /* Increased size for better visibility */
+        width: 40px;
+        /* Increased size for better visibility */
         height: 40px;
         display: flex;
         align-items: center;
@@ -520,17 +540,21 @@
         border-radius: 50%;
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     }
-    
+
     .arrow {
-        font-size: 25px; /* Adjusted to fit inside the container */
+        font-size: 25px;
+        /* Adjusted to fit inside the container */
         color: black;
         transform: rotate(-45deg);
-        transition: all 0.5s; /* Corrected rotation */
+        transition: all 0.5s;
+        /* Corrected rotation */
     }
+
     .arrow-container:hover .arrow {
-        transform: rotate(0deg); /* Rotates to point right on hover */
+        transform: rotate(0deg);
+        /* Rotates to point right on hover */
     }
-    
+
 }
 
 /* Mobile Responsive Styles */
@@ -619,9 +643,33 @@
         margin: 0 auto;
     }
 
+
+    .image-container::before {
+        content: "";
+        position: absolute;
+        top: 20px;
+        width: 50%;
+        height: 110px;
+        margin-top: 40px;
+        /* text-align: center; */
+        border: 5px solid white;
+        z-index: -1;
+        right: 25%;
+    }
+
     .paint-image {
         width: 120px;
         height: 150px;
+    }
+
+    .paint-details {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* width: 100%; */
+        margin-top: 10px;
+        gap: 29px;
+        margin-top: 20px;
     }
 
     /* Filters Container */
