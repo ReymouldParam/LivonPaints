@@ -14,9 +14,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     mail("naresh.narnapati@reymould.com", $subject, $body);
 
     if (mail($to, $subject, $body)) {
-        header("Location: contact.html?emailSuccess=true");
+        header("Location: .?emailSuccess=true");
     } else {
-        header("Location: contact.html?emailSuccess=false");
+        header("Location: contact?emailSuccess=false");
     }
     exit;
 }
