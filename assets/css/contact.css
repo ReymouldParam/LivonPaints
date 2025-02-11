@@ -217,8 +217,9 @@ textarea {
     color: white;
     line-height: 1.6;
     text-align: center;
-    width: 50%;
+    width: 60%;
     padding: 15px;
+    margin-left:4%;
     /* Adds subtle readability */
     border-radius: 10px;
 }
