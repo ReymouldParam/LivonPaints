@@ -175,10 +175,8 @@
 .category-item.active {
     font-weight: 500 !important;
     font-size: 20px;
-    width: 150px;
-    background: linear-gradient(90deg,
-            #21A366, #00A3E0, #7030A0,
-            #C00000, #FFC000, #548235, #002BFF);
+    width: 200px;
+    background: linear-gradient(90deg, #21A366, #00A3E0, #7030A0, #C00000, #FFC000, #548235, #002BFF);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     position: relative;
