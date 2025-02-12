@@ -601,7 +601,7 @@
         align-items: center !important;
         width: 100%;
         margin: auto;
-        flex-direction: row;
+        flex-direction: column;
     }
 
     .category-item {
@@ -992,155 +992,194 @@
         width: 90%;
     }
 }
+
 /* product details  */
 
-/* General Popup Styling */
 .product-details-appear {
-    position: absolute;
-    width: 350px;
-    max-width: 90%;
-    padding: 15px;
-    background: white;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
+    position: fixed;
+    /* Centers it on the screen */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 1000;
-    display: none;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    /* Ensures it's above other elements */
 }
 
-/* Active Popup */
 .product-details-appear.active {
     opacity: 1;
+    transform: translate(-50%, -50%);
     display: block;
 }
 
-/* Close Button */
-.close {
-    position: absolute;
-    top: 8px;
-    right: 10px;
-    font-size: 24px;
-    cursor: pointer;
-    color: #333;
-    transition: color 0.3s ease-in-out;
-}
-
-.close:hover {
-    color: #E86C60;
-}
-
-/* Container Styling */
 .container-product {
     display: flex;
-    flex-direction: column;
+    background: linear-gradient(to right, #E86C60 50%, #F4E9E5 50%);
+    /* padding: 20px; */
+    border-radius: 10px;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    position: relative;
+    margin-top: 250px;
+
+}
+
+.left-section {
+    width: 60%;
+    display: flex;
+    position: relative;
+    padding: 50px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: linear-gradient(to bottom, #E86C60 100%, transparent 50%), linear-gradient(to right, #1A1A3A 50%, #046C64 50%);
+    background-size: 100% 50%, 100% 50%;
+    background-position: top, bottom;
+    background-repeat: no-repeat;
+}
+
+
+.dummy-bucket {
+    width: 250px;
+    height: 300px;
+    background: gray;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    text-align: center;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
 }
 
-/* Image Adjustments */
-.left-section img {
-    width: 100px;
-    height: auto;
-    margin-bottom: 10px;
+.right-section {
+    width: 50%;
+    padding: 20px;
 }
 
-/* Features */
+.right-section h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #2E2C6A;
+    margin-bottom: 15px;
+}
+
+.description,
+.direction {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 15px;
+    border: 1px solid #333;
+    padding: 10px;
+    border-radius: 5px;
+}
+
 .features {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
+    justify-content: space-between;
+    /* margin-top: 20px; */
+    /* border: 1px solid #333; */
+    /* padding: 10px; */
+    border-radius: 5px;
+    gap: 20px;
 }
 
-.feature-icon {
-    width: 30px;
-    height: 30px;
+.features-outline {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #333;
+}
+
+.feature-item {
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+}
+
+.close {
+    position: absolute;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
-
-    /* Adjust container for mobile */
-    .container-product {
-        width: 100%;
-        /* Slightly reduced width */
-        max-width: 100%;
-        /* Allow responsiveness */
-        height: auto;
-        /* Adjust height dynamically */
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
-        background: #F4E9E5;
-        border-radius: 10px;
-        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    .product-details-appear {
+        width: 90%; /* Adjust width for smaller screens */
+        max-width: 400px; /* Prevent it from being too wide */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
-    /* Adjust left section (Image container) */
-    .left-section {
+    .container-product {
+        flex-direction: column; /* Stack elements vertically */
         width: 100%;
-        padding: 10px;
-        display: flex;
+        max-width: 100%;
+        margin-top: 100px;
+        border-radius: 10px;
+        padding: 15px;
+        background: linear-gradient(to bottom, #E86C60 25%, #F4E9E5 60%);
+    }
+
+    .left-section {
+        width: 100%; /* Full width */
+        padding: 20px;
+        border-radius: 10px 10px 0 0;
         justify-content: center;
         align-items: center;
-        background: linear-gradient(to bottom, #E86C60 50%, #F4E9E5 50%);
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
+        text-align: center;
+        background: linear-gradient(to bottom, #E86C60 100%, transparent 50%), linear-gradient(to right, #1A1A3A 50%, #046C64 50%);
+        background-size: 100% 50%, 100% 50%;
+        background-position: top, bottom;
     }
 
+    .left-section img {
+        width: 80%; /* Resize image */
+        max-width: 180px;
+    }
 
-    /* Adjust right section */
     .right-section {
-        width: 100%;
-        padding: 10px;
-        text-align: center;
+        width: 100%; /* Full width */
+        padding: 15px;
+        text-align: center; /* Center text for readability */
     }
 
     .right-section h2 {
-        font-size: 18px;
-        /* Reduce font size */
-        margin-bottom: 8px;
+        font-size: 24px;
+        margin-bottom: 10px;
     }
 
     .description,
     .direction {
-        font-size: 12px;
+        font-size: 13px;
         padding: 8px;
-        margin-bottom: 8px;
+        margin-bottom: 10px;
     }
 
-    /* Features section compressed */
     .features {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 5px;
-        /* Reduce spacing */
-    }
-
-    .features div {
-        width: 45%;
-        text-align: center;
+        flex-direction: column; /* Stack features */
+        align-items: center;
+        gap: 10px;
     }
 
     .feature-icon {
-        width: 40px;
-        /* Reduce icon size */
-        height: 40px;
+        width: 25px;
+        height: 25px;
     }
 
     .feature-item {
-        font-size: 11px;
-        /* Adjust font size */
+        font-size: 12px;
     }
 
-    /* Close button */
     .close {
-        font-size: 24px;
         top: 5px;
         right: 10px;
+        font-size: 24px;
     }
 }
+
+
+
 
 
 /* unlock */

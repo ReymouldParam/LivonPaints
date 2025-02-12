@@ -283,7 +283,7 @@
         align-items: center !important;
         width: 100%;
         margin: auto;
-        flex-direction: row;
+        flex-direction:column !important;
     }
 
     .category-item {
