@@ -705,7 +705,7 @@ body {
     justify-content: center;
     text-align: center;
     background-size: cover;
-    background-image: url('../images/manbackground.png');
+    /* background-image: url('../images/manbackground.png'); */
     background-blend-mode: multiply;
     background-position: center;
 }
@@ -725,14 +725,17 @@ body {
 /* Background Colors */
 .slicks-carousel .slides-1 {
     background-color: #c4e1a7;
+
 }
 
 .slicks-carousel .slides-2 {
     background-color: #a7d0e171;
+   
 }
 
 .slicks-carousel .slides-3 {
     background-color: #e1a7dd;
+ 
 }
 
 .man-img {
