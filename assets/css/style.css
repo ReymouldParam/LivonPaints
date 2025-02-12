@@ -374,9 +374,11 @@ body {
         margin: 0;
         height: auto;
     }
-    .images .chairs{
+
+    .images .chairs {
         display: none;
     }
+
     .images .buckets img {
         width: 180px;
         height: 100px;
@@ -946,8 +948,10 @@ body {
     color: #FF4C4C;
     font-weight: bold;
     text-decoration: none;
-    font-size: 1.5rem;
-    border-radius: 5px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    padding: 5px;
 }
 
 .products .text-center .btn:hover {
@@ -1082,22 +1086,27 @@ body {
     padding-right: 5px;
 }
 
-@media screen and (min-width:1550px){
-    .right-section{
+@media screen and (min-width:1550px) {
+    .right-section {
         margin-right: 2%;
     }
-    .fw-bold{
+
+    .fw-bold {
         font-size: 30px;
     }
-    .text-muted{
+
+    .text-muted {
         font-size: 18px;
         padding-bottom: 40px;
     }
-    .all-services{
+
+    .all-services {
         font-size: 30px;
     }
-    .all-service-para{
+
+    .all-service-para {
         font-size: 18px;
     }
 }
+
 /*end*/
