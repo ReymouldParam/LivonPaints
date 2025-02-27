@@ -730,12 +730,12 @@ body {
 
 .slicks-carousel .slides-2 {
     background-color: #a7d0e171;
-   
+
 }
 
 .slicks-carousel .slides-3 {
     background-color: #e1a7dd;
- 
+
 }
 
 .man-img {
@@ -745,6 +745,10 @@ body {
 .bucket-img {
     max-width: 100%;
     height: auto;
+}
+
+.colour-combo {
+    padding-top: 10px !important;
 }
 
 /* Responsive Styling */
