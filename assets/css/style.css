@@ -30,7 +30,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
-    background-position-y: 50px; /* Moves background down by 100px */
+    background-position-y: 50px;
+    /* Moves background down by 100px */
 }
 
 .bg-2 {
@@ -38,7 +39,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
-    background-position-y: 50px; /* Moves background down by 100px */
+    background-position-y: 50px;
+    /* Moves background down by 100px */
 }
 
 .bg-3 {
@@ -46,7 +48,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
-    background-position-y: 50px; /* Moves background down by 100px */
+    background-position-y: 50px;
+    /* Moves background down by 100px */
 }
 
 .carousel-text-overlay {
@@ -680,6 +683,36 @@ body {
     box-shadow: 0 2px 2px #293B9D;
 }
 
+@media screen and (min-width:1500px) {
+    .info-card {
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        text-align: center;
+        transition: transform 0.3s ease;
+        box-shadow: 0 2px 2px #293B9D;
+        height: 300px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 0px;
+    }
+    .info-card h5{
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .info-card p{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .info-card img{
+        height: 100px;
+        width: 100px;
+    }
+}
+
 .info-card:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 8px #293B9D;
@@ -1143,8 +1176,9 @@ body {
     }
 
     .text-muted {
-        font-size: 18px;
-        padding-bottom: 40px;
+        font-size: 20px;
+        padding-bottom: 20px;
+        font-weight: 500;
     }
 
     .all-services {
@@ -1153,6 +1187,22 @@ body {
 
     .all-service-para {
         font-size: 18px;
+    }
+}
+
+@media screen and (min-width:1500px) {
+    .btn-card span {
+        font-size: 20px;
+    }
+
+    .trust-text {
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    .text-card p {
+        font-size: 20px;
+        font-weight: 500;
     }
 }
 
