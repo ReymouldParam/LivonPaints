@@ -46,7 +46,7 @@
             #4682b4 1500px, #4682b4 1750px
             /* Steel Blue */
         );
-    animation: slideColors 10s linear infinite;
+    animation: slideColors 30s linear infinite;
 }
 
 /* Keyframes for the continuous movement */
@@ -466,7 +466,7 @@
 
     .paint-card-container {
         display: flex;
-        justify-content: space-around;
+        /* justify-content: space-around; */
         align-items: center;
         flex-wrap: wrap;
         width: 100%;
