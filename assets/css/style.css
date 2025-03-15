@@ -272,11 +272,12 @@ screen and (min-resolution: 1.25dppx) and (min-width: 1367px) and (max-width: 19
         margin-left: 130px;
     }
 
-    .images .chairs{
+    .images .chairs {
         max-width: 30%;
         margin-top: 18%;
 
     }
+
     .images .buckets {
         max-width: 30%;
         margin-top: 21%;
