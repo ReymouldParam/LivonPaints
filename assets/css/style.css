@@ -47,7 +47,7 @@ body {
     background-image: url('../images/home-background-3.png');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-x:0px;
+    background-position-x: 0px;
     background-position-y: 80px;
     /* Moves background down by 100px */
 }
@@ -136,29 +136,35 @@ body {
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
-    margin-top: 25px;
+    /* margin-top: 25px; */
     /* margin-left: 10%; */
 }
 
 
-
-
-@media screen and (max-width: 1366px) {
+/* MacBook 13.3-inch (2560 × 1600) */
+@media screen and (max-width: 2560px) and (min-width:1368px) {
 
     .bg-1 {
-        background-size: 100% auto; /* Ensures width fits while keeping original height */
-        background-position: center 50px; /* Moves image slightly downward */
+        background-size: 100% auto;
+        /* Ensures width fits while keeping original height */
+        background-position: center 50px;
+        /* Moves image slightly downward */
     }
 
     .bg-2 {
-        background-size: 100% auto; /* Ensures width fits while keeping original height */
-        background-position: center 50px; /* Moves image slightly downward */
+        background-size: 100% auto;
+        /* Ensures width fits while keeping original height */
+        background-position: center 50px;
+        /* Moves image slightly downward */
     }
 
     .bg-3 {
-        background-size: 100% auto; /* Ensures width fits while keeping original height */
-        background-position: center 50px; /* Moves image slightly downward */
+        background-size: 100% auto;
+        /* Ensures width fits while keeping original height */
+        background-position: center 50px;
+        /* Moves image slightly downward */
     }
+
     .content {
         top: 0%;
         left: 70px;
@@ -179,7 +185,7 @@ body {
 
     .images {
         margin-top: 0px;
-        margin-left:120px
+        margin-left: 120px
     }
 
     .images .chairs,
@@ -189,6 +195,93 @@ body {
     }
 }
 
+
+
+/* ✅ Full HD (1920 × 1080) with DPI adjustment */
+@media screen and (min-width: 1367px) and (max-width: 1920px),
+screen and (min-resolution: 1.25dppx) and (min-width: 1367px) and (max-width: 1920px) {
+
+
+    .bg-1,
+    .bg-2,
+    .bg-3 {
+        background-size: 100% auto;
+        background-position: center 50px;
+    }
+
+    .content {
+        top: 0%;
+        left: 70px;
+        max-width: calc(100% - 80px);
+    }
+
+    .content h1 {
+        font-size: 2.2rem;
+    }
+
+    .content p {
+        font-size: 12px;
+    }
+
+    .side-text {
+        margin-top: 5px;
+    }
+
+    .images {
+        margin-top: 0px;
+        margin-left: 120px;
+    }
+
+    .images .chairs,
+    .images .buckets {
+        max-width: 30%;
+        margin-top: 21%;
+    }
+}
+
+/* standard laptops (1366px) */
+@media screen and (max-width: 1366px) {
+
+    .bg-1,
+    .bg-2,
+    .bg-3 {
+        background-size: 100% auto;
+        background-position: center 30px;
+    }
+
+    .content {
+        top: 0%;
+        left: 70px;
+        max-width: calc(100% - 80px);
+    }
+
+    .content h1 {
+        font-size: 2.2rem;
+    }
+
+    .content p {
+        font-size: 12px;
+    }
+
+    .side-text {
+        margin-top: 5px;
+    }
+
+    .images {
+        margin-top: 0px;
+        margin-left: 130px;
+    }
+
+    .images .chairs{
+        max-width: 30%;
+        margin-top: 18%;
+
+    }
+    .images .buckets {
+        max-width: 30%;
+        margin-top: 21%;
+    }
+}
 
 /* Tablet */
 @media screen and (max-width: 992px) {
@@ -1108,6 +1201,12 @@ body {
     display: inline-block;
 }
 
+@media screen and (max-width: 2560px) and (min-width:1368px) {
+    .image-container {
+        height: 450px;
+    }
+
+}
 
 .bg-room1 {
     background-image: url('../images/room1.png');
