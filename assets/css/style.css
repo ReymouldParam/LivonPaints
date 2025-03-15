@@ -47,7 +47,7 @@ body {
     background-image: url('../images/home-background-3.png');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-x: -180px;
+    background-position-x:0px;
     background-position-y: 80px;
     /* Moves background down by 100px */
 }
@@ -137,13 +137,28 @@ body {
     justify-content: space-evenly;
     width: 100%;
     margin-top: 25px;
-    margin-left: 10%;
+    /* margin-left: 10%; */
 }
 
 
 
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1366px) {
+
+    .bg-1 {
+        background-size: 100% auto; /* Ensures width fits while keeping original height */
+        background-position: center 50px; /* Moves image slightly downward */
+    }
+
+    .bg-2 {
+        background-size: 100% auto; /* Ensures width fits while keeping original height */
+        background-position: center 50px; /* Moves image slightly downward */
+    }
+
+    .bg-3 {
+        background-size: 100% auto; /* Ensures width fits while keeping original height */
+        background-position: center 50px; /* Moves image slightly downward */
+    }
     .content {
         top: 0%;
         left: 70px;
@@ -155,13 +170,22 @@ body {
     }
 
     .content p {
-        font-size: 0.75rem;
+        font-size: 12px;
+    }
+
+    .side-text {
+        margin-top: 5px;
+    }
+
+    .images {
+        margin-top: 0px;
+        margin-left:120px
     }
 
     .images .chairs,
     .images .buckets {
         max-width: 30%;
-        margin-top: 350px;
+        margin-top: 21%;
     }
 }
 
